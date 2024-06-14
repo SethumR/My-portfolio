@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0;
+    letter-spacing: 2.1px;
+    /*background-color: #1f242d;*/
+    background-color: #1a1f27;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 33px 2px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 100px;
+  }
+  
+  .navbar ul li {
+    margin: 0 25px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    position: relative;
+  }
+  
+  /*.navbar ul li a.active::after,*/
+  .navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1.6px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffffff; 
+  }
+  
+  .navbar ul li a:hover::after {
+    width: 130%;
+  }
