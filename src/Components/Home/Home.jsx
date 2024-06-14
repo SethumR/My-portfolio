@@ -7,7 +7,6 @@ function Home() {
         <h1>Sethum Ruberu</h1>
         <p>Undergraduate | Developper | Blogger</p>
         <button className="resume-button">My Resume</button>
-        <h2 className='text-4xl'>Hii evryone</h2>
     </header>
   )
 }
