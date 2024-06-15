@@ -1,7 +1,5 @@
 import React from 'react'
 import './About.css'
-import { IoIosContact } from "react-icons/io";
-
 
 function About() {
   return (
@@ -14,13 +12,15 @@ function About() {
             and push the boundaries of computer science. Thriving in collaborative settings, I am always on the lookout for the latest technological advancements, 
             eager to learn and innovate. My vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving.</p>
 
-            <ul className='text-lg'>
-                <li> <IoIosContact /> Age : 18</li>
-                <li>DOB : 28.10.2005</li>
-                <li>Mobile nunber : (+94) 756413574</li>
-                <li>Dgree : Computer Science</li>
-                <li>Email : Sethumruberu05@gmail.com</li>
-            </ul>
+        <div className='list'>
+          <ul>
+              <li>Age : 18</li>
+              <li>DOB : 28.10.2005</li>
+              <li> Mobile number : (+94) 756413574</li>
+              <li>Degree : Computer Science</li>
+              <li>Email : Sethumruberu05@gmail.com</li>
+          </ul>
+        </div>
     </header>
   )
 }

@@ -13,9 +13,11 @@
 .about p{
     margin: 40px 0 60px;
     word-spacing: 1px;
+    font-family: "Poppins", sans-serif;
 }
 
-.about ul li{
+.list{
     margin: 0px 0 15px;
     padding-left: 40px;
 }
+
