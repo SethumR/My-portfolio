@@ -1,5 +1,7 @@
 import React from 'react'
 import './About.css'
+import { IoIosContact } from "react-icons/io";
+
 
 function About() {
   return (
@@ -13,7 +15,7 @@ function About() {
             eager to learn and innovate. My vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving.</p>
 
             <ul className='text-lg'>
-                <li>Age : 18</li>
+                <li> <IoIosContact /> Age : 18</li>
                 <li>DOB : 28.10.2005</li>
                 <li>Mobile nunber : (+94) 756413574</li>
                 <li>Dgree : Computer Science</li>
