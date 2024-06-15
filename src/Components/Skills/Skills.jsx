@@ -14,7 +14,9 @@ function Skills() {
             <li>DATABASE</li>
             <li>GRAPHIC EDITING</li>
             </ul>
-        </div>
+    </div>
+
+        
     </div>
   )
 }

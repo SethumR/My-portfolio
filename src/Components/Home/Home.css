@@ -4,6 +4,8 @@ header {
     align-items: center;
     padding: 240px 150px;
     font-family: "DM Sans", sans-serif;
+    letter-spacing: 2.1px;
+
 }
 
 .header p {
@@ -20,7 +22,7 @@ header {
     border-radius: 30px;
     cursor: pointer;
     letter-spacing: 0px;
-    width: 30%;
+    width: 20%;
   
   }
   

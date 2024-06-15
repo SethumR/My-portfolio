@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-    letter-spacing: 2.1px;
     /*background-color: #1f242d;*/
     background-color: #1a1f27;
     color: #ffffff;
@@ -18,9 +17,11 @@ body {
     top: 0;
     width: 100%;
     height: 4px;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: "DM Sans", sans-serif;
     background-color: #1a1f27;
+    letter-spacing: 2.1px;
+
   }
   
   .navbar ul {
