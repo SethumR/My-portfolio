@@ -1,37 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 header {
-    justify-content: space-between;
     align-items: center;
     padding: 240px 150px;
+    font-family: "DM Sans", sans-serif;
 }
 
-.header h1 {
-    font-size: 60px;
-    margin: 0;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: -1px;
-    
-}
-  
 .header p {
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.644);
+    color: rgba(255, 255, 255, 0.7);
     margin: 10px 0 20px;
 }
 
 .resume-button {
-    font-family: "Poppins", sans-serif;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
     color: #ffffff;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    border-radius: 10px;
+    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    border-radius: 30px;
     cursor: pointer;
+    letter-spacing: 0px;
+    width: 30%;
+  
   }
   
   .resume-button:hover {
-    background: linear-gradient(to right, #721dcc, #2870ec);
+    background: linear-gradient(270deg, rgb(26, 149, 170) 0%, rgb(118, 75, 172) 100%);
   }
