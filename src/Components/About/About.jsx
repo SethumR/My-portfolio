@@ -14,9 +14,20 @@ function About() {
         <p className="text-xl leading-9	 mb-6 tracking-wide font-light	text-slate-200	max-w-7xl">
         Thriving in collaborative environments, I eagerly embrace the latest technological advancements, always seeking opportunities to learn and innovate.
         </p>
-        <p className="text-xl leading-9	 mb-6 tracking-wide	font-light	text-slate-200	max-w-7xl">
+        <p className="text-xl leading-9	 mb-24 tracking-wide	font-light	text-slate-200	max-w-7xl">
         My ultimate vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving. With a commitment to continuous growth and a keen eye for emerging trends, I aspire to contribute meaningfully to shaping the future of technology.
         </p>
+
+        <div className='pl-10 text-xl	text-slate-200 '>
+          <ul>
+              <li className='mb-6'>Age : 18</li>
+              <li className='mb-6'>DOB : 28.10.2005</li>
+              <li className='mb-6'>Mobile number : (+94) 756413574</li>
+              <li className='mb-6'>Degree : Computer Science</li>
+              <li className='mb-20'>Email : Sethumruberu05@gmail.com</li>
+          </ul>
+        </div>
+
       </div>
     </section>
   );
