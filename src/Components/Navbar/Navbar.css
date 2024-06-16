@@ -3,23 +3,25 @@
 body {
     margin: 0;
     /*background-color: #1f242d;*/
-    background-color: #1a1f27;
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
     color: #ffffff;
     box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
   }
   
   .navbar {
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding: 33px 2px; 
+    padding: 38px 2px; 
     position: fixed;
     top: 0;
     width: 100%;
     height: 4px;
     font-size: 1.7rem;
-    font-family: "DM Sans", sans-serif;
-    background-color: #1a1f27;
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
     letter-spacing: 2.1px;
 
   }
@@ -29,7 +31,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 100px;
+    gap: 90px;
   }
   
   .navbar ul li {
