@@ -1,28 +1,25 @@
-import React from 'react'
-import './About.css'
+import React from 'react';
 
 function About() {
   return (
-    <header className="about">
-        <h1 className='text-6xl font-normal'>About</h1>
-        <p className='text-lg'>I am Sethum Ruberu, an enthusiastic computer science undergraduate at the Informatics Institute of Technology in Sri Lanka, 
-            proudly affiliated with the University of Westminster in the United Kingdom. My academic journey has been a thrilling adventure, 
-            immersing me in the dynamic realms of software development, intricate algorithms, and insightful data analysis. 
-            Driven by a passion for technology and innovation, I aspire to harness my skills to tackle real-world challenges 
-            and push the boundaries of computer science. Thriving in collaborative settings, I am always on the lookout for the latest technological advancements, 
-            eager to learn and innovate. My vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving.</p>
-
-        <div className='list'>
-          <ul>
-              <li>Age : 18</li>
-              <li>DOB : 28.10.2005</li>
-              <li> Mobile number : (+94) 756413574</li>
-              <li>Degree : Computer Science</li>
-              <li>Email : Sethumruberu05@gmail.com</li>
-          </ul>
-        </div>
-    </header>
-  )
+    <section className="bg-gray-900 text-white py-20 px-10">
+      <div className='pl-24'>
+        <h1 className="text-6xl font-semibold mb-10">About</h1>
+        <p className="text-xl mb-6 leading-9 tracking-wide	font-light	text-slate-200		">
+        I am Sethum Ruberu, a passionate computer science undergraduate at the Informatics Institute of Technology in Sri Lanka, proudly affiliated with the University of Westminster in the United Kingdom. My academic journey has been an exhilarating adventure, immersing me in the dynamic realms of software development, intricate algorithms, and insightful data analysis.
+        </p>
+        <p className="text-xl leading-9	 mb-6 tracking-wide	font-light	text-slate-200	">
+        Driven by an unwavering passion for technology and innovation, I am determined to leverage my skills to tackle real-world challenges and push the boundaries of computer science.
+        </p>
+        <p className="text-xl leading-9	 mb-6 tracking-wide font-light	text-slate-200		">
+        Thriving in collaborative environments, I eagerly embrace the latest technological advancements, always seeking opportunities to learn and innovate.
+        </p>
+        <p className="text-xl leading-9	 mb-6 tracking-wide	font-light	text-slate-200	">
+        My ultimate vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving. With a commitment to continuous growth and a keen eye for emerging trends, I aspire to contribute meaningfully to shaping the future of technology.
+        </p>
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;
