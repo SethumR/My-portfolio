@@ -6,18 +6,19 @@ function Skills() {
       <div className="pl-32">
         <h2 className="text-6xl font-semibold mb-10 tracking-wide	">Skills</h2>
         <p className="mb-12 text-2xl font-medium text-gray-300">As a developer, I've worked with a variety of Languages and Frameworks.</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl		">
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl	pl-10">
           <div>
-            <h4 className="text-xl font-semibold mb-5 ">Frontend</h4>
-            <ul>
-              <li className="mb-4"><span className="mr-2">🌐</span>HTML</li>
-              <li className="mb-4"><span className="mr-2">🌐</span>CSS</li>
-              <li className="mb-4"><span className="mr-2">🌐</span>JavaScript</li>
-              <li className="mb-4"><span className="mr-2">🌐</span>React</li>
-              <li className="mb-4"><span className="mr-2">🌐</span>Bootsrap</li>
-              <li className="mb-4"><span className="mr-2">🌐</span>Tailwind CSS</li>
-              <li className="mb-24"><span className="mr-2">🌐</span>Flutter</li>
-            </ul>
+              <h4 className="text-xl font-semibold mb-5">Frontend</h4>
+              <ul>
+                <li className="mb-4 h"><span className="mr-2">🌐</span>HTML</li>
+                <li className="mb-4"><span className="mr-2">🌐</span>CSS</li>
+                <li className="mb-4"><span className="mr-2">🌐</span>JavaScript</li>
+                <li className="mb-4"><span className="mr-2">🌐</span>React</li>
+                <li className="mb-4"><span className="mr-2">🌐</span>Bootsrap</li>
+                <li className="mb-4"><span className="mr-2">🌐</span>Tailwind CSS</li>
+                <li className="mb-24"><span className="mr-2">🌐</span>Flutter</li>
+              </ul>
           </div>
           <div>
             <h4 className="text-xl font-semibold mb-5">Backend</h4>
