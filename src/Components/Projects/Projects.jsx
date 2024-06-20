@@ -10,17 +10,17 @@ function Projects() {
           <div className="flex space-x-8 mb-40 pl-10">
             <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-center h-[355px] w-[365px]">
               <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-              <p className="text-white ">Description for the first image</p>
+              <p className="text-white">Description for the first image</p>
              </div>
 
              <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-center h-[355px] w-[365px]">
               <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-              <p className="text-white ">Description for the first image</p>
+              <p className="text-white">Description for the first image</p>
              </div>
 
              <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-center h-[355px] w-[365px]">
               <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-              <p className="text-white ">Description for the first image</p>
+              <p className="text-white">Description for the first image</p>
              </div>
           </div>      
     </div>
