@@ -5,6 +5,7 @@ function Contact() {
     <div className='pl-32'>
         <div>
             <h2 className='text-6xl font-semibold mb-10  tracking-wide'>Contact</h2>
+            <p className="mb-16 text-2xl font-medium text-gray-300 ">If you have any queries, please do get in touch.</p>
         </div>
 
           <div className="pl-8 mb-16 p-4 grid lg:grid-cols-5 gap-6 max-w-7xl">
