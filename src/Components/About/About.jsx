@@ -4,8 +4,9 @@ function About() {
   return (
     <section className="bg-gray-900 text-white py-20 px-10">
       <div className='pl-20 '>
+      <div className="w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600  mb-10 rounded-full	"></div>
         <h1 className="text-6xl font-semibold mb-10 tracking-wide	">About</h1>
-        <p className="text-xl mb-12 leading-9 tracking-wide	font-light	text-slate-200 	max-w-7xl">
+        <p className="text-xl mb-10 leading-9 tracking-wide	font-light	text-slate-200 	max-w-7xl">
         I am Sethum Ruberu, an ambitious computer science undergraduate at the Informatics Institute of Technology, Sri Lanka, affiliated with the University of Westminster, UK. My academic journey has immersed me in software development, intricate algorithms, and insightful data analysis. Driven by a passion for technology and innovation, I thrive in collaborative environments where I embrace the latest advancements. With relentless curiosity and commitment to growth, I aspire to make a profound impact on the tech industry through creative problem-solving and shaping the future of technology.
         </p>
 
@@ -21,11 +22,11 @@ function About() {
 
         <div className='pl-10 text-xl	text-slate-200 '>
           <ul>
-              <li className='mb-6'>Age : 18</li>
+              <li className='mb-5'>Age : 18</li>
               <li className='mb-6'>DOB : 28.10.2005</li>
-              <li className='mb-6'>Mobile number : (+94) 756413574</li>
+              <li className='mb-5'>Mobile number : (+94) 756413574</li>
               <li className='mb-6'>Degree : Computer Science</li>
-              <li className='mb-16'>Email : Sethumruberu05@gmail.com</li>
+              <li className='mb-12'>Email : Sethumruberu05@gmail.com</li>
           </ul>
         </div>
 
