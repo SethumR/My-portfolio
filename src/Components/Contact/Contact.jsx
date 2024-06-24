@@ -2,54 +2,85 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='pl-32'>
-        <div>
-        <div className="w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600  mb-12 rounded-full	"></div>
-            <h2 className='text-6xl font-semibold mb-10  tracking-wide'>Contact</h2>
-            <p className="mb-16 text-2xl font-medium text-gray-300 ">If you have any queries, please do get in touch.</p>
+    <div>
+        <div className='text-center'>
+            <h2 className='text-6xl font-semibold mb-8  tracking-wide'>Contact</h2>
+            <p className="mb-14 text-2xl font-medium text-gray-300">If you have any queries, please do get in touch.</p>
         </div>
-
-          <div className="pl-8 mb-16 p-4 grid lg:grid-cols-2 gap-6 max-w-lg	">
+        
+        <div className="pl-60 p-4 grid mb-[-70px] lg:grid-cols-5 gap-6 max-w-7xl	">
             
-          <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
-          <div className="text-xl font-bold mt-4">Email</div>
+          <div className="bg-gray-800 text-white p-4 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
+          <div className="text-xl font-bold mt-2">Email</div>
             <a href="mailto:sethumruberu05@gmail.com" className="mt-2 text-blue-400 hover:underline">
               Get in touch
             </a>
           </div>
 
-          <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
-            <div className="text-xl font-bold mt-4">Call</div>
+          <div className="bg-gray-800 text-white p-4 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
+            <div className="text-xl font-bold mt-2">Call</div>
             <a href="tel:+94756413574" className="mt-2 text-blue-400 hover:underline">
               +94 756413574
             </a>
           </div>
 
-          <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
-            <div className="text-xl font-bold mt-4">LinkedIn</div>
+          <div className="bg-gray-800 text-white p-4 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
+            <div className="text-xl font-bold mt-2">LinkedIn</div>
             <a href="#" className="mt-2 text-blue-400 hover:underline">
               View my LinkedIn
             </a>
           </div>
 
-          <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
-            <div className="text-xl font-bold mt-4">GitHub</div>
+          <div className="bg-gray-800 text-white p-4 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
+            <div className="text-xl font-bold mt-2">GitHub</div>
             <a href="#" className="mt-2 text-blue-400 hover:underline">
               View my GitHub
             </a>
           </div>
     
-          <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center ">
-            <div className="text-xl font-bold mt-4">Instagram</div>
+          <div className="bg-gray-800 text-white p-4 rounded-2xl shadow-lg hover:bg-gray-700 transition duration-300 flex flex-col items-center">
+            <div className="text-xl font-bold mt-2">Instagram</div>
             <a href="#" className="mt-2 text-blue-400 hover:underline">
               View my Instagram
             </a>
           </div>
-    </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 p-8 mb-">
+          <form className="w-full max-w-6xl grid lg:grid-cols-2 gap-6">
+            <input 
+              type="text" 
+              placeholder="Full Name" 
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input 
+              type="email" 
+              placeholder="Email Address" 
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input 
+              type="text" 
+              placeholder="Mobile Number" 
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input 
+              type="text" 
+              placeholder="Email Subject" 
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <textarea 
+              placeholder="Your Message" 
+              className="col-span-2 bg-gray-800 text-white p-4 rounded-md h-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+            <button 
+              type="submit" 
+              className="col-span-2 bg-blue-500 text-white p-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              Send Message
+            </button>
+          </form>
+        </div>
   </div>
   )
 }
 
 export default Contact
-
-
