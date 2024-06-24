@@ -18,7 +18,7 @@ function Skills() {
                 <li className="mb-4"><span className="mr-2">🌐</span>React</li>
                 <li className="mb-4"><span className="mr-2">🌐</span>Bootsrap</li>
                 <li className="mb-4"><span className="mr-2">🌐</span>Tailwind CSS</li>
-                <li className="mb-32"><span className="mr-2">🌐</span>Flutter</li>
+                <li className="mb-20"><span className="mr-2">🌐</span>Flutter</li>
               </ul>
           </div>
           <div>

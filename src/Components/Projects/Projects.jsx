@@ -7,23 +7,20 @@ function Projects() {
         <p className="mb-16 text-2xl font-medium text-gray-300 text-center">As a developer, These are some of the projects I've worked on recently.</p>
 
        
-        <div className="flex space-x-8 mb-52 pl-44">
-          <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-center h-[365px] w-[365px]">
-            <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-            <p className="text-white">Description for the first image</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-52">
+          <div>
+            <img src="https://manulaperera12.github.io/portfolio/images/img2.png" alt="First" className="h-[375px] w-[375px] rounded-3xl " />
           </div>
 
-          <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-centerh-[365px] w-[365px]">
-            <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-            <p className="text-white">Description for the first image</p>
+          <div>
+            <img src="https://manulaperera12.github.io/portfolio/images/img1.png" alt="First" className="h-[375px] w-[375px] rounded-3xl" />
           </div>
 
-          <div className="bg-slate-700 p-4 rounded-3xl flex flex-col items-center h-[365px] w-[365px]">
-            <img src="path/to/first-image.jpg" alt="First" className="mb-4 rounded-lg shadow-lg" />
-            <p className="text-white">Description for the first image</p>
+          <div>
+            <img src="https://manulaperera12.github.io/portfolio/images/img3.png" alt="First" className="h-[375px] w-[375px] rounded-3xl" />
           </div>
-        </div>    
-          
+
+        </div>       
     </div>
   )
 }
