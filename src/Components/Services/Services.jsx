@@ -8,7 +8,7 @@ const Services = () => {
         <h2 className="text-6xl font-semibold mb-20 tracking-wide text-center ">Our Services</h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center mb-36 ">
-          <div className="bg-gray-800 rounded-2xl p-8 text-center  w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in">
+          <div className="bg-gray-800 rounded-2xl p-8 text-center  w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in ">
           <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
               <FaCode /> </div>
             <h3 className="text-2xl font-semibold mb-3">Web Development</h3>

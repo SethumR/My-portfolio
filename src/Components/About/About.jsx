@@ -17,13 +17,12 @@ function About() {
         <div className='pl-10 text-xl	text-slate-200 '>
           <ul>
               <li className='mb-7'>Age : 18</li>
-              <li className='mb-6'>DOB : 28.10.2005</li>
+              <li className='mb-7'>DOB : 28.10.2005</li>
               <li className='mb-7'>Mobile number : (+94) 756413574</li>
-              <li className='mb-6'>Degree : Computer Science</li>
-              <li className='mb-12'>Email : Sethumruberu05@gmail.com</li>
+              <li className='mb-7'>Degree : Computer Science</li>
+              <li className=''>Email : Sethumruberu05@gmail.com</li>
           </ul>
         </div>
-
       </div>
     </section>
   );

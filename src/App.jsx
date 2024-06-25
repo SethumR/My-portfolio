@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer'
 import Contact from './Components/Contact/Contact'
 import Projects from './Components/Projects/Projects'
 import Services from './Components/Services/Services'
+import Journey from './Components/Journy/Jorney'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Journey/>
       <Skills/>
       <Services/>
       <Projects/>

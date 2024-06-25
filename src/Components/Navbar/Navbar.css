@@ -66,5 +66,5 @@ body {
   }
   
   .navbar ul li a:hover::after {
-    width: 130%;
+    width: 125%;
   }
