@@ -3,12 +3,12 @@ import { FaCode, FaMobileAlt, FaPalette, FaAndroid } from 'react-icons/fa';
 
 const Services = () => {
   return (
-    <section className="bg-gray-900 text-white py-12">
+    <section className=" text-white py-12">
       <div>
         <h2 className="text-6xl font-semibold mb-20 tracking-wide text-center ">Our Services</h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center mb-36 ">
-          <div className="bg-gray-800 rounded-2xl p-8 text-center  w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in ">
+          <div className="bg-slate-800 rounded-2xl p-8 text-center  w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in ">
           <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
               <FaCode /> </div>
             <h3 className="text-2xl font-semibold mb-3">Web Development</h3>
@@ -18,7 +18,7 @@ const Services = () => {
             </button>
           </div>
 
-          <div className="bg-gray-800 rounded-2xl p-8 text-center w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105  duration-700 ease-out-in">
+          <div className="bg-slate-800 rounded-2xl p-8 text-center w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105  duration-700 ease-out-in">
             <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
                 <FaAndroid />
             </div>
@@ -30,7 +30,7 @@ const Services = () => {
             </div>
 
 
-          <div className="bg-gray-800 rounded-2xl p-8 text-center flex- w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in">
+          <div className="bg-slate-800 rounded-2xl p-8 text-center flex- w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in">
           <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
               <FaPalette /></div>
             <h3 className="text-2xl font-semibold mb-3">UI / UX Designing</h3>

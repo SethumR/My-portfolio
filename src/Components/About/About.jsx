@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <section className="bg-gray-900 text-white py-20 px-10">
+    <section className=" text-white py-20 px-10">
       <div className='pl-20 '>
       <div className="w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600  mb-10 rounded-full	"></div>
         <h1 className="text-6xl font-semibold mb-10 tracking-wide	">About</h1>

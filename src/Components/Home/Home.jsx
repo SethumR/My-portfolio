@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaCloudDownloadAlt } from "react-icons/fa";
 
 
 function Home() {
