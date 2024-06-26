@@ -15,7 +15,7 @@ function Projects() {
           <img src="https://manulaperera12.github.io/portfolio/images/img2.png" alt="First" className="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"/>
           <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
             <h4 className="text-3xl font-semibold">My Portfolio</h4>
-            <p className="text-xl my-1 mb-8">Project Description</p>
+            <p className="text-xl my-1 mb-8">lore</p>
             <div className="flex justify-center items-center">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="block">
               <div className=" w-14 h-14 bg-white rounded-full flex justify-center items-center text-gray-700">
