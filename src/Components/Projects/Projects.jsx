@@ -1,4 +1,5 @@
 import React from 'react';
+import { TbExternalLink } from "react-icons/tb";
 
 function Projects() {
   return (
@@ -12,10 +13,46 @@ function Projects() {
       <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-52">
         <div className="portfolio-box relative group h-[375px] w-[375px] rounded-3xl overflow-hidden">
           <img src="https://manulaperera12.github.io/portfolio/images/img2.png" alt="First" className="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"/>
-          <div className="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.1)] to-[var(--main-color)] flex justify-center items-center flex-col text-center p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0">
+          <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
             <h4 className="text-3xl font-semibold">My Portfolio</h4>
-            <p className="text-xl my-1">Project Description</p>
-            <a href="#" className="flex justify-center items-center w-20 h-20 bg-[var(--text-color)] rounded-full">Link</a>
+            <p className="text-xl my-1 mb-8">Project Description</p>
+            <div className="flex justify-center items-center">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="block">
+              <div className=" w-14 h-14 bg-white rounded-full flex justify-center items-center text-gray-700">
+              <TbExternalLink /> <path strokeLinecap="round" strokeLinejoin="round" />
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-box relative group h-[375px] w-[375px] rounded-3xl overflow-hidden">
+          <img src="https://manulaperera12.github.io/portfolio/images/img1.png" alt="First" className="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"/>
+          <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
+            <h4 className="text-3xl font-semibold">My Portfolio</h4>
+            <p className="text-xl my-1 mb-8">Project Description</p>
+            <div className="flex justify-center items-center">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="w-14 h-14 bg-white rounded-full flex justify-center items-center text-gray-700">
+              <TbExternalLink /> <path strokeLinecap="round" strokeLinejoin="round" />
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-box relative group h-[375px] w-[375px] rounded-3xl overflow-hidden">
+          <img src="https://manulaperera12.github.io/portfolio/images/img3.png" alt="First" className="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"/>
+          <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
+            <h4 className="text-3xl font-semibold">My Portfolio</h4>
+            <p className="text-xl my-1 mb-8">Project Description</p>
+            <div className="flex justify-center items-center">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="block">
+             <div className="w-14 h-14 bg-white rounded-full flex justify-center items-center text-gray-700">
+              <TbExternalLink /> <path strokeLinecap="round" strokeLinejoin="round" />
+              </div>
+              </a>
+            </div>
           </div>
         </div>
 
