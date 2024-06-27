@@ -95,5 +95,5 @@ This project is open source and available under the [Sethum Ruberu](https://www.
 Feel free to reach out if you have any questions or suggestions!
 
 - Email: Sethumruberu05@gmail.com
-- LinkedIn: [Sethum Ruberu](https://www.linkedin.com/in/sethum-ruberu-90a369293/)
+- LinkedIn: [View my profile](https://www.linkedin.com/in/sethum-ruberu-90a369293/)
 
