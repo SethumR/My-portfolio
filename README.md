@@ -1,6 +1,7 @@
-# Personal Portfolio
+# Personal Portfolio</br>
 
-Welcome to my personal portfolio! This project is built using React.js, Tailwind CSS, React Icons, and Vite. It showcases my work and projects.
+## Overview
+Welcome to my personal portfolio! This project is built using React.js, Tailwind CSS, React Icons, and Vite. It showcases my work and projects. </br>
 
 ## Table of Contents
 
@@ -9,13 +10,12 @@ Welcome to my personal portfolio! This project is built using React.js, Tailwind
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Contact](#contact)</br></br>
 
 ## Demo
 
-You can check out the live version of my portfolio [here](https://your-portfolio-link.com).
+You can check out the live version of my portfolio [here](https://your-portfolio-link.com).</br></br>
 
 ## Features
 
@@ -23,15 +23,15 @@ You can check out the live version of my portfolio [here](https://your-portfolio
 - Interactive UI with smooth animations
 - Projects showcase with detailed descriptions
 - Contact form
-- Social media integration
+- Social media integration </br></br>
 
 ## Technologies
 
 - React.js
 - Tailwind CSS
 - React Icons
-- Vite
-
+- Vite </br></br>
+ 
 ## Installation
 
 To run this project locally, follow these steps:
@@ -55,40 +55,15 @@ To run this project locally, follow these steps:
     npm run dev
     ```
 
-The app will be running on `http://localhost:3000`.
+The app will be running on `http://localhost:3000`. </br></br>
 
 ## Usage
 
-You can use this portfolio template for your personal use. Feel free to customize the components and styles to match your own branding.
-
-## Contributing
-
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
-1. **Fork the repository**
-2. **Create your feature branch:**
-
-    ```sh
-    git checkout -b feature/YourFeature
-    ```
-
-3. **Commit your changes:**
-
-    ```sh
-    git commit -m 'Add some feature'
-    ```
-
-4. **Push to the branch:**
-
-    ```sh
-    git push origin feature/YourFeature
-    ```
-
-5. **Create a new Pull Request**
+You can use this portfolio template for your personal use. Feel free to customize the components and styles to match your own branding.</br></br>
 
 ## License
 
-This project is open source and available under the [Sethum Ruberu](https://www.linkedin.com/in/sethum-ruberu-90a369293/).
+This project is open source and available under the [Sethum Ruberu](https://www.linkedin.com/in/sethum-ruberu-90a369293/).</br></br>
 
 ## Contact
 
