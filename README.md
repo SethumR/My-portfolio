@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 
     ```sh
     git clone https://github.com/Sethumruberu/My-portfolio.git
-    cd your-repo-name
+    cd My-portfolio
     ```
 
 2. **Install dependencies:**
@@ -94,6 +94,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Feel free to reach out if you have any questions or suggestions!
 
-- Email: your-email@example.com
+- Email: Sethumruberu05@gmail.com
 - LinkedIn: [Sethum Ruberu]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/sethum-ruberu-90a369293/))
 
