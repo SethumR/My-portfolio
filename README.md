@@ -21,11 +21,11 @@ You can check out the live version of my portfolio [here](https://your-portfolio
 
 ## Features
 
-- Responsive Design: Ensures the website adapts seamlessly to different screen sizes and devices, providing an optimal user experience on desktops, tablets, and smartphones.
-- Interactive UI with Smooth Animations: Enhances user engagement with a dynamic interface that includes fluid animations and transitions for a polished and interactive feel.
-- Projects Showcase with Detailed Descriptions: Displays a portfolio of projects with comprehensive descriptions, images, and links to demonstrate your work and skills effectively.
-- Contact Form: Provides a user-friendly form for visitors to easily reach out with inquiries, feedback, or collaboration requests.
-- Social Media Integration: Connects your website to your social media profiles, allowing visitors to follow and engage with you on various platforms. </br></br>
+- Responsive Design: Adapts to various screen sizes for a seamless user experience.
+- Interactive UI: Smooth animations and transitions enhance user engagement.
+- Projects Showcase: Displays detailed descriptions of your projects.
+- Contact Form: Allows visitors to get in touch with you easily.
+- Social Media Integration: Links to your social media profiles for better connectivity. </br></br>
 
 ## Technologies
 
@@ -72,5 +72,8 @@ This project is open source and available under the [Sethum Ruberu](https://www.
 Feel free to reach out if you have any questions or suggestions!
 
 - Email: Sethumruberu05@gmail.com
-- LinkedIn: [View my profile](https://www.linkedin.com/in/sethum-ruberu-90a369293/)
+- LinkedIn: [View my profile](https://www.linkedin.com/in/sethum-ruberu-90a369293/)</br></br>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
