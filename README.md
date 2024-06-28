@@ -1,4 +1,4 @@
-# Personal Portfolio</br>
+# My Personal Portfolio</br></br>
 
 
 ## 🤖Overview
@@ -67,7 +67,7 @@ You can use this portfolio template for your personal use. Feel free to customiz
 
 This project is open source and available under the [Sethum Ruberu](https://www.linkedin.com/in/sethum-ruberu-90a369293/).</br></br>
 
-## 🖇️Contact
+## ☎️Contact
 
 Feel free to reach out if you have any questions or suggestions!
 
