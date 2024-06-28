@@ -1,40 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { GiMoebiusStar } from "react-icons/gi";
+import React from 'react';
+import { BsFillRocketTakeoffFill } from "react-icons/bs";
+import { LuPhoneCall } from "react-icons/lu";
+import { FaUserGraduate } from "react-icons/fa6";
+import { IoMailUnread } from "react-icons/io5";
+import { IoPersonAddSharp } from "react-icons/io5";
+import { GiJusticeStar } from "react-icons/gi";
 
 const About = () => {
-  const [isShaking, setIsShaking] = useState(true); // State to toggle shaking animation
-
-  useEffect(() => {
-    // Function to toggle animation state
-    const toggleAnimation = () => {
-      setIsShaking(prevState => !prevState);
-    };
-
-    // Start animation loop on component mount
-    const interval = setInterval(toggleAnimation, 2000); // Adjust this value to control animation speed (milliseconds)
-
-    // Cleanup function to stop animation loop on component unmount
-    return () => clearInterval(interval);
-  }, []); // Empty dependency array ensures effect runs only once on component mount
-
-  // Inline CSS for the animate-shake animation
-  const shakeAnimationStyle = {
-    animation: isShaking ? 'shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite' : 'none',
-  };
-
   return (
     <section className="text-white py-20 px-10">
       <style>
         {`
-          @keyframes shake {
+          @keyframes smoothShake {
             0%, 100% {
-              transform: translate3d(0, 0, 0);
+              transform: translateX(0);
             }
-            10%, 30%, 50%, 70%, 90% {
-              transform: translate3d(-2px, 0, 0);
-            }
-            20%, 40%, 60%, 80% {
-              transform: translate3d(2px, 0, 0);
+            50% {
+              transform: translateX10px);
             }
           }
         `}
@@ -50,30 +32,34 @@ const About = () => {
         <p className="text-xl leading-9 mb-6 tracking-wide font-light text-slate-200 max-w-[1320px]">
           Thriving in collaborative environments, I eagerly embrace the latest technological advancements, always seeking opportunities to learn and innovate. My ultimate vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving.
         </p>
-        <p className="text-xl leading-9 mb-20 tracking-wide font-light text-slate-200 max-w-[1320px]">
+        <p className="text-xl leading-9 mb-16 tracking-wide font-light text-slate-200 max-w-[1320px]">
           With a commitment to continuous growth and a keen eye for emerging trends, I aspire to contribute meaningfully to shaping the future of technology. By staying at the forefront of technological advancements and continuously honing my skills, I aim to be a catalyst for innovation and positive change in the tech industry.
         </p>
         
         <div className='pl-8 text-xl text-slate-200'>
           <ul>
-            <li className='flex items-center mb-7'>
-              <GiMoebiusStar className={`mr-4`} style={shakeAnimationStyle} />
+            <li className='flex items-center mb-7 align-middle'>
+              <IoPersonAddSharp className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
+              Name: Sethum Ruberu
+            </li>
+            <li className='flex items-center mb-7 align-middle'>
+              <BsFillRocketTakeoffFill className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
               Age: 18
             </li>
-            <li className='flex items-center mb-7'>
-              <GiMoebiusStar className={`mr-4`} style={shakeAnimationStyle} />
+            <li className='flex items-center mb-7 align-middle'>
+              <GiJusticeStar className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
               DOB: 28.10.2005
             </li>
             <li className='flex items-center mb-7'>
-              <GiMoebiusStar className={`mr-4`} style={shakeAnimationStyle} />
+              <LuPhoneCall className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
               Mobile number: (+94) 756413574
             </li>
             <li className='flex items-center mb-7'>
-              <GiMoebiusStar className={`mr-4`} style={shakeAnimationStyle} />
+              <FaUserGraduate className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
               Degree: Computer Science
             </li>
             <li className='flex items-center'>
-              <GiMoebiusStar className={`mr-4`} style={shakeAnimationStyle} />
+              <IoMailUnread className="mr-6" style={{ animation: 'smoothShake 1s infinite ease-in-out' }} />
               Email: Sethumruberu05@gmail.com
             </li>
           </ul>
