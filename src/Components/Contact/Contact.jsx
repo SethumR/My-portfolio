@@ -48,34 +48,34 @@ function Contact() {
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen p-8 ">
-          <form className="w-full max-w-5xl grid lg:grid-cols-2 gap-6">
+          <form className="w-full max-w-4xl grid lg:grid-cols-2 gap-6">
             <input 
               type="text" 
               placeholder="Full Name" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-800"
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             />
             <input 
               type="email" 
               placeholder="Email Address" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-800"
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             />
             <input 
               type="text" 
               placeholder="Mobile Number" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-800"
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             />
             <input 
               type="text" 
               placeholder="Email Subject" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-800"
+              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             />
             <textarea 
               placeholder="Your Message" 
-              className="col-span-2 bg-gray-800 text-white p-4 rounded-md h-40 focus:outline-none focus:ring-2 focus:ring-blue-800 "
+              className="col-span-2 bg-gray-800 text-white p-4 rounded-lg h-40 focus:outline-none focus:ring-2 focus:ring-blue-800 "
             ></textarea>
             <button 
               type="submit" 
-              className="col-span-2 bg-blue-600 text-white p-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-800 ">
+              className="col-span-2 bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-800 ">
               Send Message
             </button>
           </form>
