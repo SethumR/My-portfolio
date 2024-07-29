@@ -6,7 +6,7 @@ function Contact() {
     <div>
         <div className='text-center'>
             <h2 className='text-6xl font-semibold mb-8  tracking-wide'>Contact</h2>
-            <p className="mb-14 text-2xl font-medium text-gray-300 ">If you have any queries, please do get in touch.</p>
+            <p className="mb-14 text-2xl font-medium text-gray-300 ">If you have any queries, please do get in touch. </p>
         </div>
         
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-[-80px]">
