@@ -25,6 +25,7 @@ const Skills = () => {
             }
           `}
         </style>
+        
         <div className="w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600 mb-10 rounded-full"></div>
         <h2 className="text-6xl font-semibold mb-10 tracking-wide">Skills</h2>
         <p className="mb-12 text-2xl font-medium text-gray-300">As a developer, I've worked with a variety of Languages and Frameworks.</p>
