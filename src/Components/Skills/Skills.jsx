@@ -9,6 +9,7 @@ import { GrMysql } from "react-icons/gr";
 import { FiFigma } from "react-icons/fi";
 
 
+
 const Skills = () => {
   return (
     <section className="py-16">
