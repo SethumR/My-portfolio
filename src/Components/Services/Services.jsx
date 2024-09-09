@@ -29,7 +29,6 @@ const Services = () => {
             </button>
             </div>
 
-
           <div className="bg-slate-800 rounded-2xl p-8 text-center flex- w-[392px] h-[329px] mx-4 transform transition-transform hover:scale-105 duration-700 ease-out-in">
           <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
               <FaPalette /></div>
