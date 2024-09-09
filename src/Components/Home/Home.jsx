@@ -17,7 +17,6 @@ function Home() {
     return () => clearInterval(typingInterval);
   }, []);
 
-
   return (
     <header className="pt-52 pl-32" style={{ letterSpacing: '2.1px' }}>
       <div className="w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600 mb-12 rounded-full"></div>
