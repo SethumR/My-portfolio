@@ -62,13 +62,13 @@ body {
     transition: width 0.3s ease-in-out;
   }
   
-  .navbar ul li a:hover {
+.navbar ul li a:hover {
     color: #ffffff; 
-  }
+}
   
-  .navbar ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 125%;
-  }
+}
   
 @keyframes blink {
   from, to {
