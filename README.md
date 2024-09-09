@@ -4,7 +4,6 @@
 ## 🤖Overview
 Welcome to my personal portfolio! This project is built using React.js, Tailwind CSS, React Icons, and Vite. It showcases all my works and projects, highlighting my skills and expertise in web development. Explore my portfolio to see detailed project descriptions, technologies used, and my approach to solving various challenges.</br></br>
 
-
 ## 📋Table of Contents
 
 - [Demo](#demo)
