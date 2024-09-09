@@ -12,7 +12,7 @@ body {
     font-family: "DM Sans", sans-serif;
   }
   
-  .navbar {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center; 
