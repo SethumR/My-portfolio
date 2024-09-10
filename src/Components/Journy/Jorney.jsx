@@ -3,7 +3,7 @@ import React from 'react';
 const Journey = () => {
   return (
     <div className=" text-white p-10 pl-32 mb-12">
-      <p className="mb-12 text-2xl font-medium text-gray-300">My journey has taught me numerous valuable lessons about growth and resilience.</p>
+      <p className="mb-12 text-2xl font-medium text-gray-300"> My journey has taught me numerous valuable lessons about growth and resilience.</p>
 
       <div className="flex flex-row justify-between ">
         <div className="text-center mx-4 ">
