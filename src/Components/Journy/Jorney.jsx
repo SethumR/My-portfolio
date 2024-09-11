@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Journey = () => {
   return (
     <div className=" text-white p-10 pl-32 mb-12">
