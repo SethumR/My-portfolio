@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { IoMdMail } from "react-icons/io";
+import { MdAddIcCall } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -11,38 +14,32 @@ function Contact() {
         
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-[-80px]">
             
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[170px]">
-          <div className="text-xl font-bold mt-2">Email</div>
-            <a href="mailto:sethumruberu05@gmail.com" target="_blank" className="mt-2 text-blue-400 hover:underline">
+          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
+          <div className="text-xl font-bold mt-2"><IoMdMail className='w-10 h-7'/>
+          </div>
+            <a href="mailto:sethumruberu05@gmail.com" target="_blank" className="mt-2 text-blue-400 hover:underline text-l ">
               Get in touch
             </a>
-          </div>
+          </div> 
 
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[170px]">
-            <div className="text-xl font-bold mt-2">Call</div>
+          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[150px]">
+            <div className="text-xl font-bold mt-2"><MdAddIcCall className='w-10 h-7'/></div>
             <a href="tel:+94756413574" target="_blank" className="mt-2 text-blue-400 hover:underline">
               +94 756413574
             </a>
           </div>
 
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[170px]">
-            <div className="text-xl font-bold mt-2">LinkedIn</div>
+          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
+            <div className="text-xl font-bold mt-2"><FaLinkedin className='w-10 h-7'/></div>
             <a href="https://www.linkedin.com/in/sethum-ruberu-90a369293/" target="_blank"  className="mt-2 text-blue-400 hover:underline">
-              View my LinkedIn
+              Linkedin
             </a>
           </div>
 
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[170px]">
-            <div className="text-xl font-bold mt-2">GitHub</div>
+          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
+            <div className="text-xl font-bold mt-2"><FaGithub className='w-10 h-7'/></div>
             <a href="https://github.com/Sethumruberu" target="_blank" className="mt-2 text-blue-400 hover:underline">
-              View my GitHub
-            </a>
-          </div>
-    
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[180px]">
-            <div className="text-xl font-bold mt-2">Instagram</div>
-            <a href="#" target="_blank" className="mt-2 text-blue-400 hover:underline">
-              View my Instagram
+              Github
             </a>
           </div>
         </div>
