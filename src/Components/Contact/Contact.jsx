@@ -48,7 +48,7 @@ function Contact() {
         </div>
 
         <div className="flex flex-col items-center justify-center min-h-screen p-8">
-          <form className="w-full max-w-4xl grid lg:grid-cols-2 gap-6">
+          <form className="w-full max-w-3xl grid lg:grid-cols-2 gap-6">
             <input 
               type="text" 
               placeholder="Full Name" 
