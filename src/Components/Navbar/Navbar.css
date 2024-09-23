@@ -26,7 +26,7 @@ body {
     letter-spacing: 2.1px;
     font-weight:500;
     z-index: 1000;
-  }
+}
   
 .navbar ul {
     list-style: none;
@@ -34,11 +34,11 @@ body {
     margin: 0;
     display: flex;
     gap: 90px;
-  }
+}
   
 .navbar ul li {
     margin: 0 25px;
-  }
+}
   
 .navbar ul li a {
     text-decoration: none;
