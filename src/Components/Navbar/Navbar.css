@@ -45,7 +45,7 @@ body {
     color: #ffffff;
     font-size: 15px;
     position: relative;
-  }
+}
   
 /*.navbar ul li a.active::after,*/
   .navbar ul li a::after {
