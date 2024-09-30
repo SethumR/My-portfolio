@@ -47,7 +47,7 @@ body {
 }
   
 /*.navbar ul li a.active::after,*/
-  .navbar ul li a::after {
+.navbar ul li a::after {
     content: '';
     display: block;
     width: 0%;
