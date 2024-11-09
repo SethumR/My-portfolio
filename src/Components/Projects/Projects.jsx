@@ -4,6 +4,7 @@ import { TbExternalLink } from "react-icons/tb";
 function Projects() {
   return (
 
+    
     <div>
       <h2 className="text-6xl font-semibold mb-10 tracking-wide text-center">Projects</h2>
       <p className="mb-16 text-2xl font-medium text-gray-300 text-center">
