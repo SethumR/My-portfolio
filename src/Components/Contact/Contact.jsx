@@ -4,6 +4,7 @@ import { MdAddIcCall } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+
 function Contact() {
   return (
     <div>
