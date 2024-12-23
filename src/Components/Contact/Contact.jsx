@@ -1,85 +1,215 @@
-import React from 'react'
-import { IoMdMail } from "react-icons/io";
-import { MdAddIcCall } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+'use client'
 
+import { useEffect, useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaMapPin, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
-function Contact() {
+export default function ContactPage() {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      easing: 'ease-in-out', // Easing type
+      once: true, // Whether animation should happen only once
+    });
+
+    // Setup canvas background animation
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    let animationFrameId;
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    const createLines = () => {
+      const lines = [];
+      for (let i = 0; i < 50; i++) {
+        lines.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          length: Math.random() * 100 + 50,
+          speed: Math.random() * 0.5 + 0.1,
+          angle: Math.random() * Math.PI * 2,
+        });
+      }
+      return lines;
+    };
+
+    const drawLines = (lines) => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.lineWidth = 1;
+
+      lines.forEach((line) => {
+        ctx.beginPath();
+        ctx.moveTo(line.x, line.y);
+        const endX = line.x + Math.cos(line.angle) * line.length;
+        const endY = line.y + Math.sin(line.angle) * line.length;
+        ctx.lineTo(endX, endY);
+        ctx.stroke();
+
+        line.x += Math.cos(line.angle) * line.speed;
+        line.y += Math.sin(line.angle) * line.speed;
+
+        if (line.x < -line.length) line.x = canvas.width + line.length;
+        if (line.x > canvas.width + line.length) line.x = -line.length;
+        if (line.y < -line.length) line.y = canvas.height + line.length;
+        if (line.y > canvas.height + line.length) line.y = -line.length;
+      });
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const lines = createLines();
+
+    const animate = () => {
+      drawLines(lines);
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
   return (
-    <div>
-        <div className='text-center'>
-            <h2 className='text-6xl font-semibold mb-8  tracking-wide'>Contact</h2>
-            <p className="mb-14 text-2xl font-medium text-gray-300 ">If you have any queries, please do get in touch. </p>
-        </div>
-        
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-[-80px]">
-            
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
-          <div className="text-xl font-bold mt-2"><IoMdMail className='w-10 h-7'/>
-          </div>
-            <a href="mailto:sethumruberu05@gmail.com" target="_blank" className="mt-2 text-blue-400 hover:underline text-l ">
+    <div className="relative min-h-screen bg-[#0E1526] text-white overflow-hidden mt-12">
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 w-full h-full"
+        style={{ mixBlendMode: 'screen' }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Get in touch */}
+          <div className="space-y-8" data-aos="fade-right">
+            <h1 className="text-6xl font-bold tracking-tight bg-gradient-to-l from-teal-500 to-purple-600 text-transparent bg-clip-text tracking-wide	">
               Get in touch
-            </a>
-          </div> 
-
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[150px]">
-            <div className="text-xl font-bold mt-2"><MdAddIcCall className='w-10 h-7'/></div>
-            <a href="tel:+94756413574" target="_blank" className="mt-2 text-blue-400 hover:underline">
-              +94 756413574
-            </a>
+            </h1>
+            <p className="text-gray-400 text-lg max-w-md">
+              We’d love to hear from you! Whether you have any questions,
+              need assistance, or just want to connect, don’t hesitate to reach out.
+              We’ll respond as quickly as possible to assist you.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="p-2 rounded-full border border-gray-700">
+                  <FaMapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-gray-400">Address:</p>
+                  <p>Colombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="p-2 rounded-full border border-gray-700">
+                  <FaPhone className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-gray-400">Mobile:</p>
+                  <p>+94 756413574</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="p-2 rounded-full border border-gray-700">
+                  <FaEnvelope className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-gray-400">Email:</p>
+                  <p>contact.Hired@gurus.club</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="p-2 rounded-full border border-gray-700">
+                  <FaGlobe className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-gray-400">Website:</p>
+                  <p>Hired.com</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
-            <div className="text-xl font-bold mt-2"><FaLinkedin className='w-10 h-7'/></div>
-            <a href="https://www.linkedin.com/in/sethum-ruberu-90a369293/" target="_blank"  className="mt-2 text-blue-400 hover:underline">
-              Linkedin
-            </a>
-          </div>
-
-          <div className="bg-slate-800 text-white p-4 rounded-2xl shadow-lg hover:bg-slate-700 transition duration-300 flex flex-col items-center w-[130px]">
-            <div className="text-xl font-bold mt-2"><FaGithub className='w-10 h-7'/></div>
-            <a href="https://github.com/Sethumruberu" target="_blank" className="mt-2 text-blue-400 hover:underline">
-              Github
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center min-h-screen p-8">
-          <form className="w-full max-w-3xl grid lg:grid-cols-2 gap-6">
-            <input 
-              type="text" 
-              placeholder="Full Name" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
-            />
-            <input 
-              type="email" 
-              placeholder="Email Address" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
-            />
-            <input 
-              type="text" 
-              placeholder="Mobile Number" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
-            />
-            <input 
-              type="text" 
-              placeholder="Email Subject" 
-              className="col-span-1 bg-gray-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
-            />
-            <textarea 
-              placeholder="Your Message" 
-              className="col-span-2 bg-gray-800 text-white p-4 rounded-lg h-40 focus:outline-none focus:ring-2 focus:ring-blue-800 "
-            ></textarea>
-            <button 
-              type="submit" 
-              className="col-span-2 bg-blue-600 text-white p-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-800 ">
-              Send Message
-            </button>
+          {/* Right Column - Form */}
+          <form className="space-y-6" data-aos="fade-left">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="firstName" className="sr-only">
+                  First name
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  placeholder="First name"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors"
+                />
+              </div>
+              <div>
+                <label htmlFor="lastName" className="sr-only">
+                  Last name
+                </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="Last name"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors"
+                />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors"
+              />
+            </div>
+            <div>
+              <label htmlFor="caontactnumber" className="sr-only">
+                Contact Number
+              </label>
+              <input
+                type="text"
+                id="Contact Number"
+                placeholder="Contact Number"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors"
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="sr-only">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows={6}
+                placeholder="Message"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors resize-none"
+              />
+            </div>
+            {/* Center the button */}
+            <div className="flex justify-center">
+              <button
+                className="w-full px-4 py-3 rounded-lg bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 font-medium transition-colors"
+                data-aos="fade-up"
+              >
+                Send message
+              </button>
+            </div>
           </form>
         </div>
-  </div>
-  )
+      </div> 
+    </div>
+  );
 }
-
-export default Contact

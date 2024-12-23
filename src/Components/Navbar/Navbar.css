@@ -4,7 +4,7 @@ body {
     margin: 0;
     /*background-color: #1f242d;*/
     --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39/ var(--tw-bg-opacity));
+    background-color:#0E1526;
     color: #ffffff;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
@@ -21,7 +21,7 @@ body {
     height: 4px;
     font-size: .7rem;
     --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    background-color: #0E1526;
     letter-spacing: 2.1px;
     font-weight:500;
     z-index: 1000;
@@ -52,7 +52,7 @@ body {
     display: block;
     width: 0%;
     height: 1.6px;
-    background-color: #ffffff;
+    background: linear-gradient(to left, #14b8a6, #9333ea);
     position: absolute;
     bottom: -8px;
     left: 50%;

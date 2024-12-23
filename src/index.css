@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .cursor-animation {
+      animation: blink 0.7s infinite;
+    }
+  
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+  
+  
