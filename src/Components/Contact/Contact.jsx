@@ -91,7 +91,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Get in touch */}
           <div className="space-y-8" data-aos="fade-right">
-            <h1 className="text-6xl font-bold tracking-tight bg-gradient-to-l from-teal-500 to-purple-600 text-transparent bg-clip-text tracking-wide	">
+            <h1 className="text-6xl font-bold  bg-gradient-to-l from-teal-500 to-purple-600 text-transparent bg-clip-text tracking-wide	">
               Get in touch
             </h1>
             <p className="text-gray-400 text-lg max-w-md">
