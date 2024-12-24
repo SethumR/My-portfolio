@@ -67,43 +67,45 @@ const Publications = () => {
   }, []);
 
   return (
-    <section className="pl-20 px-6 py-16 min-h-screen relative mb-24">
+    <section className="pl-4 sm:pl-8 lg:pl-20 px-4 sm:px-6 py-12 lg:py-16 min-h-screen relative sm:mb-24 -mb-12">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-bold text-white mb-6">Medium Publications</h1>
-        <p className="text-gray-300 text-xl mb-12">
-          Here are the blogs I write on, mostly technology and anything else that interests me.
+        <h1 className="text-[34px] sm:text-5xl font-bold text-white mb-6 sm:mb-6 tracking-wide">
+          Medium Publications
+        </h1>
+        <p className="text-gray-300 text-[18.5px] sm:text-2xl mb-10 sm:mb-12">
+          Here I write blogs on technology, innovation, and various topics that pique my curiosity.
         </p>
 
         <div className="relative">
-          <button 
-            onClick={() => scroll('left')} 
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
+          <button
+            onClick={() => scroll('left')}
+            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
             aria-label="Scroll left"
           >
             <FaChevronLeft size={24} />
           </button>
 
-          <div 
+          <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-6"
+            className="flex gap-4 sm:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 sm:pb-6"
           >
             {articles.map((article) => (
-              <article 
+              <article
                 key={article.id}
-                className="w-[300px] flex-shrink-0 bg-white rounded-xl overflow-hidden snap-start"
+                className="w-[250px] sm:w-[300px] flex-shrink-0 bg-white rounded-xl overflow-hidden snap-start shadow-lg"
               >
-                <div className="h-[200px] overflow-hidden">
+                <div className="h-[150px] sm:h-[200px] overflow-hidden">
                   <img
                     src={article.image}
-                    alt=""
+                    alt={article.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 h-[200px] flex flex-col">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 line-clamp-2">
+                <div className="p-4 sm:p-6 h-[180px] flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4 line-clamp-2">
                     {article.title}
                   </h3>
-                  <div className="mt-auto flex flex-col gap-2">
+                  <div className="mt-auto flex flex-col gap-1 sm:gap-2">
                     <a
                       href={article.link}
                       className="text-blue-600 hover:underline"
@@ -112,25 +114,25 @@ const Publications = () => {
                     >
                       View on Medium
                     </a>
-                    <time className="text-gray-500">{article.date}</time>
+                    <time className="text-gray-500 text-sm">{article.date}</time>
                   </div>
                 </div>
               </article>
             ))}
           </div>
 
-          <button 
-            onClick={() => scroll('right')} 
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
+          <button
+            onClick={() => scroll('right')}
+            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 transition-colors"
             aria-label="Scroll right"
           >
             <FaChevronRight size={24} />
           </button>
         </div>
 
-        <a 
+        <a
           href="https://medium.com/@yourusername"
-          className="block w-full bg-[#8B5CF6] text-white text-center py-4 rounded-lg mt-8 hover:bg-[#7C3AED] transition-colors"
+          className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -141,7 +143,7 @@ const Publications = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-3 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-3 sm:p-4 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={24} />
