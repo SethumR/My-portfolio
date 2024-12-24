@@ -4,6 +4,8 @@ import { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaMapPin, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function ContactPage() {
   const canvasRef = useRef(null);
@@ -99,17 +101,10 @@ export default function ContactPage() {
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="p-2 rounded-full border border-gray-700">
-                  <FaMapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-gray-400 text-sm sm:text-base">Address:</p>
-                  <p>Colombo, Sri Lanka</p>
-                </div>
               </div>
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-full border border-gray-700">
-                  <FaPhone className="w-5 h-5" />
+                  <FaPhone className="w-6 h-6" />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm sm:text-base">Mobile:</p>
@@ -118,21 +113,34 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-full border border-gray-700">
-                  <FaEnvelope className="w-5 h-5" />
+                  <FaEnvelope className="w-6 h-6" />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm sm:text-base">Email:</p>
-                  <p>contact.Hired@gurus.club</p>
+                  <p>Sethumgelaka6@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="p-2 rounded-full border border-gray-700">
-                  <FaGlobe className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-gray-400 text-sm sm:text-base">Website:</p>
-                  <p>Hired.com</p>
-                </div>
+                <a href="https://www.linkedin.com/in/sethumr/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+                  <div className="p-2 rounded-full border border-gray-700">
+                    <FaLinkedin className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400 text-sm sm:text-base">Linkedin:</p>
+                    <p>Click Here</p>
+                  </div>
+                </a>
+              </div>
+              <div className="flex items-center gap-4">
+                <a href="https://github.com/SethumR" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+                  <div className="p-2 rounded-full border border-gray-700">
+                    <FaGithub className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400 text-sm sm:text-base">Github:</p>
+                    <p>Click Here</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
