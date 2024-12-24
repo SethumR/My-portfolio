@@ -45,10 +45,12 @@ function Projects() {
         As a developer, these are some of the projects I've worked on recently.
       </p>
 
+      <div data-aos="fade-up">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-10">
         {projects.map((project, index) => (
           <ProjectBox key={index} {...project} />
         ))}
+      </div>
       </div>
 
       {/* <div>

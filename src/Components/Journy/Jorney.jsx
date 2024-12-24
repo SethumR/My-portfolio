@@ -32,13 +32,15 @@ const Journey = () => {
   ];
 
   return (
-    <div className="text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:pl-24 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+    <div 
+    data-aos="fade"
+    className="text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:pl-24 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
       <p className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
         My journey has taught me numerous valuable lessons about growth and resilience.
       </p>
 
 
-      <div data-aos="zoom-in">
+      <div data-aos="fade-up">
       <div 
         ref={scrollRef}
         className="flex overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory sm:snap-none sm:flex-wrap justify-start sm:justify-between gap-4 sm:gap-4 pb-4 sm:pb-0"

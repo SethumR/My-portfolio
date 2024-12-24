@@ -72,9 +72,11 @@ const Publications = () => {
         <h1 className="text-[34px] sm:text-5xl font-bold text-white mb-6 sm:mb-6 tracking-wide">
           Medium Publications
         </h1>
+        <div data-aos="fade">
         <p className="text-gray-300 text-[18.5px] sm:text-2xl mb-10 sm:mb-12">
           Here I write blogs on technology, innovation, and various topics that pique my curiosity.
         </p>
+        </div>
 
         <div className="relative">
           <button
@@ -86,6 +88,7 @@ const Publications = () => {
           </button>
 
           <div
+            data-aos="fade-up"
             ref={scrollRef}
             className="flex gap-4 sm:gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 sm:pb-6"
           >
@@ -131,6 +134,7 @@ const Publications = () => {
         </div>
 
         <a
+          data-aos="fade-up"
           href="https://medium.com/@sethumgelaka6"
           className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold"
           target="_blank"

@@ -1,5 +1,5 @@
 const ServiceCard = ({ image, title, type }) => (
-  <div className="bg-slate-800 rounded-3xl overflow-hidden shadow-md	transform transition-transform hover:scale-105 duration-700 ease-out-in shadow-slate-600	">
+  <div className="bg-slate-800 rounded-3xl overflow-hidden shadow-md	transform transition-transform hover:scale-105 duration-700 ease-out-in shadow-slate-600">
     <div className="h-72 flex items-center justify-center p-4"> 
       <img src={image} alt={title} className="w-full h-full object-cover rounded-3xl" />
     </div>
@@ -37,10 +37,12 @@ const Services = () => {
           Our Services
         </h2>
 
+        <div data-aos="flip-up">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
+        </div>
         </div>
       </div>
     </section>
