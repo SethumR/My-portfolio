@@ -39,7 +39,7 @@ function Projects() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-16 mb-20">
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
       <p className="mb-10 sm:mb-16 text-xl sm:text-2xl font-medium text-gray-300 text-center max-w-3xl mx-auto">
         As a developer, these are some of the projects I've worked on recently.
