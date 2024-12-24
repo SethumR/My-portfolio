@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useEffect, useRef } from 'react';
 import AOS from 'aos';
@@ -9,14 +9,12 @@ export default function ContactPage() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
-      duration: 1000, // Animation duration in ms
-      easing: 'ease-in-out', // Easing type
-      once: true, // Whether animation should happen only once
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
     });
 
-    // Setup canvas background animation
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let animationFrameId;
@@ -91,10 +89,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Get in touch */}
           <div className="space-y-8" data-aos="fade-right">
-            <h1 className="text-6xl font-bold  bg-gradient-to-l from-teal-500 to-purple-600 text-transparent bg-clip-text tracking-wide	">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-teal-500 to-purple-600 text-transparent bg-clip-text tracking-wide">
               Get in touch
             </h1>
-            <p className="text-gray-400 text-lg max-w-md">
+            <p className="text-gray-400 text-base sm:text-lg max-w-md">
               We’d love to hear from you! Whether you have any questions,
               need assistance, or just want to connect, don’t hesitate to reach out.
               We’ll respond as quickly as possible to assist you.
@@ -105,7 +103,7 @@ export default function ContactPage() {
                   <FaMapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-gray-400">Address:</p>
+                  <p className="text-gray-400 text-sm sm:text-base">Address:</p>
                   <p>Colombo, Sri Lanka</p>
                 </div>
               </div>
@@ -114,7 +112,7 @@ export default function ContactPage() {
                   <FaPhone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-gray-400">Mobile:</p>
+                  <p className="text-gray-400 text-sm sm:text-base">Mobile:</p>
                   <p>+94 756413574</p>
                 </div>
               </div>
@@ -123,7 +121,7 @@ export default function ContactPage() {
                   <FaEnvelope className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-gray-400">Email:</p>
+                  <p className="text-gray-400 text-sm sm:text-base">Email:</p>
                   <p>contact.Hired@gurus.club</p>
                 </div>
               </div>
@@ -132,7 +130,7 @@ export default function ContactPage() {
                   <FaGlobe className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-gray-400">Website:</p>
+                  <p className="text-gray-400 text-sm sm:text-base">Website:</p>
                   <p>Hired.com</p>
                 </div>
               </div>
@@ -177,12 +175,12 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label htmlFor="caontactnumber" className="sr-only">
+              <label htmlFor="contactNumber" className="sr-only">
                 Contact Number
               </label>
               <input
                 type="text"
-                id="Contact Number"
+                id="contactNumber"
                 placeholder="Contact Number"
                 className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors"
               />
@@ -198,7 +196,6 @@ export default function ContactPage() {
                 className="w-full px-4 py-3 rounded-lg bg-gray-800/50 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition-colors resize-none"
               />
             </div>
-            {/* Center the button */}
             <div className="flex justify-center">
               <button
                 className="w-full px-4 py-3 rounded-lg bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 font-medium transition-colors mb-12"
@@ -209,7 +206,7 @@ export default function ContactPage() {
             </div>
           </form>
         </div>
-      </div> 
+      </div>
     </div>
   );
 }
