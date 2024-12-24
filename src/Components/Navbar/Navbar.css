@@ -1,56 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+/* General styles */
 body {
     margin: 0;
-    /*background-color: #1f242d;*/
-    --tw-bg-opacity: 1;
-    background-color:#0E1526;
+    background-color: #0E1526;
     color: #ffffff;
-    box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
-  
+
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    padding: 38px 2px; 
+    align-items: center;
+    padding: 38px 2px;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 4px;
-    font-size: .7rem;
-    --tw-bg-opacity: 1;
     background-color: #0E1526;
     letter-spacing: 2.1px;
-    font-weight:500;
+    font-weight: 500;
     z-index: 1000;
 }
-  
-.navbar ul {
+
+.navbar-list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 90px;
+    gap: 140px;
 }
-  
-.navbar ul li {
-    margin: 0 25px;
-}
-  
-.navbar ul li a {
+
+.navbar-list li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 15px;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
-  
-/*.navbar ul li a.active::after,*/
-.navbar ul li a::after {
-    content: '';
+
+.navbar-list li a:hover::after {
+    width: 125%;
+}
+
+.navbar-list li a::after {
+    content: "";
     display: block;
-    width: 0%;
+    width: 0;
     height: 1.6px;
     background: linear-gradient(to left, #14b8a6, #9333ea);
     position: absolute;
@@ -58,22 +51,58 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease-in-out;
-  }
-  
-.navbar ul li a:hover {
-    color: #ffffff; 
-}
-  
-.navbar ul li a:hover::after {
-    width: 125%;
-}
-  
-@keyframes blink {
-  from, to {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
 }
 
+/* Responsive styles */
+/* Responsive styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute; /* Use absolute positioning */
+  right: 20px; /* Adjust the distance from the right edge */
+  top: 15px; /* Adjust the vertical alignment */
+  z-index: 1100; /* Ensure it's above other elements */
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #0E1526;
+        padding: 20px 0;
+        display: none; /* Initially hidden */
+        gap: 20px;
+    }
+
+    .navbar-list.show {
+        display: flex;
+    }
+
+    .navbar-list li {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-list li a {
+        font-size: 14px;
+    }
+}

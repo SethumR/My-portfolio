@@ -28,16 +28,17 @@ const Journey = () => {
     { year: '2022', description: 'Joined with IIT and started following foundation program' },
     { year: '2023', description: 'Successfully finished the foundation and started 1st year at UOW' },
     { year: '2024', description: 'Successfully finished the 1st year at UOW and started 2nd year' },
-    { year: '2025', description: 'Completed GCE Ordinary Level' },
-    { year: '2025', description: 'Completed GCE Ordinary Level' },
+    { year: '2025', description: 'Succsfully Completed 1 semester of the 2nd year and stared 2nd Semester' },
   ];
 
   return (
-    <div className="text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:pl-32 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+    <div className="text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:pl-24 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
       <p className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
         My journey has taught me numerous valuable lessons about growth and resilience.
       </p>
 
+
+      <div data-aos="zoom-in">
       <div 
         ref={scrollRef}
         className="flex overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory sm:snap-none sm:flex-wrap justify-start sm:justify-between gap-4 sm:gap-4 pb-4 sm:pb-0"
@@ -66,6 +67,7 @@ const Journey = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

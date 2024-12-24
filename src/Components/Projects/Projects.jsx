@@ -2,7 +2,7 @@ import React from 'react';
 import { TbExternalLink } from "react-icons/tb";
 
 const ProjectBox = ({ image, title, description, link }) => (
-  <div className="portfolio-box relative group h-[300px] sm:h-[375px] w-full sm:w-[375px] rounded-3xl overflow-hidden">
+  <div className="portfolio-box relative group h-[350px] sm:h-[375px] w-full sm:w-[375px] rounded-3xl overflow-hidden">
     <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
     <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-4 sm:p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
       <h4 className="text-2xl sm:text-3xl font-semibold mb-2">{title}</h4>
@@ -39,17 +39,27 @@ function Projects() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16 mb-20">
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
+    <div className="container mx-auto px-4 py-16 mb-6 sm:mb-12 mt-12 lg:mt-20">
+      <h2 className="text-[42px] sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
       <p className="mb-10 sm:mb-16 text-xl sm:text-2xl font-medium text-gray-300 text-center max-w-3xl mx-auto">
         As a developer, these are some of the projects I've worked on recently.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-10">
         {projects.map((project, index) => (
           <ProjectBox key={index} {...project} />
         ))}
       </div>
+
+      {/* <div>
+      <a  href="https://medium.com/@yourusername"
+          className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold mb-6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VIEW ALL ARTICLES
+        </a>
+      </div> */}
     </div>
   );
 }

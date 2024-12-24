@@ -1,46 +1,43 @@
-import React from 'react';
-import { FaCode, FaAndroid, FaPalette } from 'react-icons/fa';
-
-const ServiceCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-slate-800 rounded-2xl p-6 sm:p-8 text-center w-full max-w-[392px] h-auto sm:h-[329px] mx-auto mb-8 sm:mb-0 transform transition-transform hover:scale-105 duration-700 ease-out-in">
-    <div className="flex justify-center items-center mb-4 text-blue-400 text-4xl">
-      <Icon />
+const ServiceCard = ({ image, title, type }) => (
+  <div className="bg-slate-800 rounded-3xl overflow-hidden shadow-md	transform transition-transform hover:scale-105 duration-700 ease-out-in shadow-slate-600	">
+    <div className="h-72 flex items-center justify-center p-4"> 
+      <img src={image} alt={title} className="w-full h-full object-cover rounded-3xl" />
     </div>
-    <h3 className="text-xl sm:text-2xl font-semibold mb-3">{title}</h3>
-    <p className="mb-6 text-sm sm:text-base">{description}</p>
-    <button className="bg-blue-400 text-gray-900 font-bold py-2 px-4 rounded-3xl hover:bg-blue-500 transition-colors duration-300">
-      Contact
-    </button>
+    <div className="p-6 text-center">
+      <h3 className="text-2xl font-semibold text-white mb-4">{title}</h3>
+      <h4 className="text-slate-300 text-lg font-medium  mb-2">{type}</h4>
+    </div>
   </div>
 );
 
 const Services = () => {
   const services = [
     {
-      icon: FaCode,
-      title: "Web Development",
-      description: "I develop responsive websites using React, HTML, CSS, JavaScript, Bootstrap and Tailwind CSS. Committed to delivering innovative solutions."
+      image: 'Web.png', 
+      title: 'Web Development',
+      type : 'Building responsive, user-friendly websites that deliver exceptional experiences across all devices and platforms.'
     },
     {
-      icon: FaAndroid,
-      title: "Mobile Development",
-      description: "I craft intuitive mobile apps that prioritize user experience and performance, leveraging modern technologies for seamless functionality."
+      image: 'Mobile.png',
+      title: 'Mobile Development',
+      type : 'Creating intuitive mobile apps that offer seamless experiences, optimized for performance across all devices.'
+
     },
     {
-      icon: FaPalette,
-      title: "UI / UX Designing",
-      description: "I specialize in creating intuitive user interfaces and experiences that enhance brand engagement through strategic design and user interaction."
-    }
+      image: 'Ui.png', 
+      title: 'UI UX Design',
+      type: 'Designing intuitive and engaging UI/UX that enhances user experience and ensures seamless interaction across platforms.',
+    },
   ];
 
   return (
-    <section className="text-white py-12 px-4 sm:px-6 lg:px-8">
+    <section className="text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-12 sm:mb-20 tracking-wide text-center">
+        <h2 className="text-[42px] sm:text-5xl font-semibold mb-12 lg:mb-16 text-center">
           Our Services
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 lg:gap-8 mb-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
@@ -51,4 +48,3 @@ const Services = () => {
 };
 
 export default Services;
-

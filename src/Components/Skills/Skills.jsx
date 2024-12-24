@@ -82,14 +82,14 @@ const Skills = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-12">
+      <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-6">
         <div className="w-20 h-1.5 bg-gradient-to-r from-teal-500 to-purple-600 mb-6 md:mb-10 rounded-full"></div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 md:mb-10 tracking-wide">Skills</h2>
-        <p className="mb-8 md:mb-12 text-xl md:text-2xl font-medium text-gray-300">
+        <p className="mb-12 md:mb-12 text-xl md:text-2xl font-medium text-gray-300 ">
           As a developer, I've worked with a variety of Languages and Frameworks.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {skillCategories.map((category, index) => (
             <SkillCategory key={index} title={category.title} skills={category.skills} />
           ))}

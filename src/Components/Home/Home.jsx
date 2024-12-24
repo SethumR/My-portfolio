@@ -19,29 +19,38 @@ function Home() {
 
   return (
     <header
-      className="pt-60 sm:pt-32 md:pt-64 pl-6 pr-6 md:pr-0 bg-[#0E1526] sm:pl-2 md:pl-10 lg:pl-28 "
+      className="pt-56 sm:pt-32 md:pt-36 lg:pt-60 px-6 sm:px-4 md:px-10 lg:px-20 bg-[#0E1526] text-white"
       style={{ letterSpacing: "2.1px" }}
-      >
+    >
       {/* Gradient Line */}
-      <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-teal-500 to-purple-600 mb-8 md:mb-12 rounded-full"></div>
-      
+      <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-teal-500 to-purple-600 mb-10 md:mb-10 lg:mb-12 rounded-full"></div>
+
       {/* Heading */}
-      <h1 className="text-4xl sm:text-3xl md:text-6xl lg:text-[70px] font-medium mb-4 md:mb-10 tracking-[0.025em]">
+      <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[66px] font-medium mb-4 md:mb-6 lg:mb-8 tracking-wide">
         <span className="typed-text">Se{name}</span>
         <span className="cursor-animation font-light"> |</span>
       </h1>
-      
+
       {/* Subheading */}
-      <p className="text-lg sm:text-base md:text-lg lg:text-[26px] text-white text-opacity-70 mb-8 md:mb-12">
+      <p className="text-lg sm:text-base md:text-lg lg:text-[27px] text-white text-opacity-70 mb-8 md:mb-8 lg:mb-12 sm:mb-4">
         Undergraduate | Fullstack Developer | Blogger
       </p>
-      
-      {/* Button */}
-      <button className="py-3 md:py-4 px-6 text-base md:text-lg lg:text-2xl font-semibold text-white bg-gradient-to-l from-teal-500 to-purple-600 rounded-full cursor-pointer hover:from-teal-700 hover:to-purple-800 w-full md:w-1/3 lg:w-1/4 transition-all mb-52">
-        My Resume <FaCloudDownloadAlt className="inline-flex ml-3 w-5 h-5" />
-      </button>
-  </header>
 
+      {/* Button */}
+      <div data-aos="fade-right">
+        <div className="md:justify-start mb-48">
+          <a 
+            href="CV.pdf"  // Assuming the PDF is in the public folder
+            download="Sethum_Ruberu_Resume"  // Optional: Customize the filename for the downloaded file
+          >
+            <button className="py-3 md:py-4 px-6 text-lg sm:text-base md:text-lg lg:text-xl font-semibold bg-gradient-to-l from-teal-500 to-purple-600 rounded-full cursor-pointer hover:from-teal-700 hover:to-purple-800 transition-all shadow-md">
+              My Resume <FaCloudDownloadAlt className="inline-flex ml-2 w-5 h-5" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </header>
   );
 }
 
