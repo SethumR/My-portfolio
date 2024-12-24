@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact'
 import Projects from './Components/Projects/Projects'
 import Services from './Components/Services/Services'
 import Journey from './Components/Journy/Jorney'
+import Publications from './Publications/Publications'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Skills/>
       <Services/>
       <Projects/>
+      <Publications/>
       <Contact/>
       <Footer/>
     </>
