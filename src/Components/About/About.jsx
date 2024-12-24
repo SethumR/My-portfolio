@@ -56,7 +56,7 @@ const About = () => {
                     className="mr-4 sm:mr-6 flex-shrink-0"
                     style={{ animation: "smoothShake 1s infinite ease-in-out" }}
                   />
-                  <span>Age: 18</span>
+                  <span>Age: 19</span>
                 </li>
                 <li className="flex items-center align-middle">
                   <GiJusticeStar
@@ -84,7 +84,7 @@ const About = () => {
                     className="mr-4 sm:mr-6 flex-shrink-0"
                     style={{ animation: "smoothShake 1s infinite ease-in-out" }}
                   />
-                  <span className="break-all">Email: Sethumruberu05@gmail.com</span>
+                  <span className="break-all">Email: Sethumgelaka6@gmail.com</span>
                 </li>
               </ul>
             </div>
