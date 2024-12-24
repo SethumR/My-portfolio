@@ -2,11 +2,16 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='px-32 text-gray-300'>
-        <hr className='mb-8'/>
-        <h2 className='text-center mb-12 leading-8	font-medium '> © 2024 Sethum Ruberu</h2>
-    </div>
+    <footer className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 py-6 text-gray-300 mb-12">
+      <div className="container mx-auto">
+        <hr className=" mb-6" />
+        <p className="text-center text-sm sm:text-base font-medium">
+          © {new Date().getFullYear()} Sethum Ruberu
+        </p>
+      </div>
+    </footer>
   )
 }
 
 export default Footer
+

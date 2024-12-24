@@ -201,7 +201,7 @@ export default function ContactPage() {
             {/* Center the button */}
             <div className="flex justify-center">
               <button
-                className="w-full px-4 py-3 rounded-lg bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 font-medium transition-colors"
+                className="w-full px-4 py-3 rounded-lg bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 font-medium transition-colors mb-12"
                 data-aos="fade-up"
               >
                 Send message
