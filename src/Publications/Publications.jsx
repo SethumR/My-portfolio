@@ -4,36 +4,36 @@ import { FaChevronLeft, FaChevronRight, FaArrowUp } from 'react-icons/fa';
 const articles = [
   {
     id: 1,
-    title: "Manage Node.js with NVM",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "https://medium.com/article1",
-    date: "Wed Mar 06 2024"
+    title: "Why React.js is a Game-Changer for Modern Web Development",
+    image: "react.png",
+    link: "https://medium.com/@sethumgelaka6/react-js-is-more-than-just-a-javascript-library-its-a-powerful-tool-that-has-revolutionized-the-c73cbdd50f06?source=friends_link&sk=08597ff6f65e468617db39b3c61d4f0c",
+    date: "Dec 24 2024"
   },
   {
     id: 2,
-    title: "Replace npm & yarn with bun.sh",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "https://medium.com/article2",
-    date: "Wed Mar 06 2024"
+    title: "How to Create a Self-Care Routine That Works for You",
+    image: "SA.png",
+    link: "https://medium.com/@sethumgelaka6/how-to-create-a-self-care-routine-that-works-for-you-2030cbf7aceb",
+    date: "Dec 25 2024"
   },
   {
     id: 3,
     title: "Embarking on the AI Odyssey: A Step-by-Step Guide to Creating Your Own GPT Model",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "react.png",
     link: "https://medium.com/article3",
     date: "Mon Dec 11 2023"
   },
   {
     id: 4,
     title: "Exploring Top Drag and Drop Libraries for React JS",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "SA.png",
     link: "https://medium.com/article4",
     date: "Wed Jul 12 2023"
   },
   {
     id: 5,
     title: "An Introduction to Prisma ORM: Simplifying Database Operations with Type-Safe Queries",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "SA.png",
     link: "https://medium.com/article5",
     date: "Mon Jul 03 2023"
   }
@@ -92,17 +92,17 @@ const Publications = () => {
             {articles.map((article) => (
               <article
                 key={article.id}
-                className="w-[250px] sm:w-[300px] flex-shrink-0 bg-white rounded-xl overflow-hidden snap-start shadow-lg"
+                className="w-[250px] sm:w-[300px] flex-shrink-0 bg-slate-800 rounded-xl overflow-hidden snap-start shadow-lg"
               >
-                <div className="h-[150px] sm:h-[200px] overflow-hidden">
+                <div className="h-[150px] sm:h-[200px] overflow-hidden p-3">
                   <img
                     src={article.image}
                     alt={article.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
                 <div className="p-4 sm:p-6 h-[180px] flex flex-col">
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4 line-clamp-2">
+                  <h3 className="text-lg sm:text-xl font-medium text-gray-200 mb-2 sm:mb-4 line-clamp-2">
                     {article.title}
                   </h3>
                   <div className="mt-auto flex flex-col gap-1 sm:gap-2">
@@ -114,7 +114,7 @@ const Publications = () => {
                     >
                       View on Medium
                     </a>
-                    <time className="text-gray-500 text-sm">{article.date}</time>
+                    <time className="text-gray-300 text-sm">{article.date}</time>
                   </div>
                 </div>
               </article>
@@ -131,7 +131,7 @@ const Publications = () => {
         </div>
 
         <a
-          href="https://medium.com/@yourusername"
+          href="https://medium.com/@sethumgelaka6"
           className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold"
           target="_blank"
           rel="noopener noreferrer"
