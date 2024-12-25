@@ -36,7 +36,6 @@ const Skills = () => {
         { icon: <FaHtml5 />, name: "HTML" },
         { icon: <IoLogoCss3 />, name: "CSS" },
         { icon: <BsBootstrap />, name: "Bootstrap" },
-        { icon: <RiFlutterFill />, name: "Flutter" },
       ]
     },
     {
@@ -84,7 +83,7 @@ const Skills = () => {
 
       <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-6">
         <div className="w-20 h-1.5 bg-gradient-to-r from-teal-500 to-purple-600 mb-6 md:mb-10 rounded-full"></div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 md:mb-10 tracking-wide">Skills</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 md:mb-10 tracking-wide">Skills</h2>
         <div data-aos="fade"> 
           <p className="mb-12 md:mb-12 text-xl md:text-2xl font-medium text-gray-300 ">
             As a developer, I've worked with a variety of Languages and Frameworks.

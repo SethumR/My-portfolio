@@ -22,24 +22,25 @@ function Projects() {
       image: "https://manulaperera12.github.io/portfolio/images/img2.png",
       title: "My Portfolio",
       description: "Explore my personal portfolio, featuring projects powered by React.js and styled with Tailwind CSS",
-      link: "https://github.com/Sethumruberu/My-portfolio"
+      link: "https://github.com/SethumR/My-portfolio.git"
     },
     {
       image: "https://manulaperera12.github.io/portfolio/images/img1.png",
-      title: "Project Two",
-      description: "Description for Project Two goes here. Replace with actual project details.",
-      link: "https://example.com"
+      title: "Real Time Ticket Simulation",
+      description: "A real-time ticket simulation system built using Java, multithreading, synchronization and serialization",
+      link: "https://github.com/SethumR/Ticketing-System-CLI.git"
     },
     {
       image: "https://manulaperera12.github.io/portfolio/images/img3.png",
-      title: "Project Three",
-      description: "Description for Project Three goes here. Replace with actual project details.",
-      link: "https://example.com"
-    }
+      title: "Mock interview Platform",
+      description: "About Responsive Web Application for an AI based Mock interview platform Web Application using Reacts.",
+      link: "https://github.com/SethumR/HIRED.git"
+    },
+    
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16 mb-6 sm:mb-12 mt-12 lg:mt-20">
+    <div className="container mx-auto px-4 py-16 mb-4 sm:mb-12 mt-12 lg:mt-20">
       <h2 className="text-[42px] sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
       <p className="mb-10 sm:mb-16 text-xl sm:text-2xl font-medium text-gray-300 text-center max-w-3xl mx-auto">
         As a developer, these are some of the projects I've worked on recently.

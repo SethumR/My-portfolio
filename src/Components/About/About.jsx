@@ -24,7 +24,7 @@ const About = () => {
 
       <div className='sm:pl-4 md:pl-10 lg:pl-12 mb-4'>
         <div className="w-16 sm:w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600 mb-6 sm:mb-10 rounded-full"></div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 sm:mb-10 tracking-wide">About</h1>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide">About</h1>
         <div data-aos="fade-up">
         <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-10 leading-7 sm:leading-9 lg:leading-9 font-light text-slate-200 max-w-full lg:max-w-[1320px]">
           Hello, I'm Sethum Ruberu, an ambitious computer science undergraduate at the Informatics Institute of Technology in Sri Lanka, affiliated with the University of Westminster, UK. My academic journey has provided me with a deep understanding of software development, intricate algorithms, and insightful data analysis. Driven by an unwavering passion for technology and innovation, I am determined to leverage my skills to tackle real-world challenges and push the boundaries of computer science.
