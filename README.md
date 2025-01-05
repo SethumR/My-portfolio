@@ -4,6 +4,10 @@
 ## 🤖Overview
 Welcome to my personal portfolio! This project is built using React.js, Tailwind CSS, React Icons, and Vite. It showcases all my works and projects, highlighting my skills and expertise in web development. Explore my portfolio to see detailed project descriptions, technologies used, and my approach to solving various challenges.</br></br>
 
+https://sethumruberu.netlify.app/
+<img width="1440" alt="Screenshot 2025-01-05 at 15 04 53" src="https://github.com/user-attachments/assets/1aa8c2f9-5492-4487-a5b9-e4f7a1024b96" />
+
+
 ## 📋Table of Contents
 
 - [Demo](#demo)
