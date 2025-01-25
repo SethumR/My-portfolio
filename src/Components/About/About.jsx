@@ -26,14 +26,14 @@ const About = () => {
         <div className="w-16 sm:w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600 mb-6 sm:mb-10 rounded-full"></div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide">About</h1>
         <div data-aos="fade-up">
-        <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-10 leading-7 sm:leading-9 lg:leading-9 font-light text-slate-200 max-w-full lg:max-w-[1320px]">
+        <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-10 leading-7 sm:leading-9 lg:leading-9 font-light text-slate-300 max-w-full lg:max-w-[1320px]">
           Hello, I'm Sethum Ruberu, an ambitious computer science undergraduate at the Informatics Institute of Technology in Sri Lanka, affiliated with the University of Westminster, UK. My academic journey has provided me with a deep understanding of software development, intricate algorithms, and insightful data analysis. Driven by an unwavering passion for technology and innovation, I am determined to leverage my skills to tackle real-world challenges and push the boundaries of computer science.
         </p>
 
-        <p className="text-base sm:text-lg lg:text-xl leading-7 sm:leading-9 lg:leading-9 mb-4 sm:mb-6 tracking-wide font-light text-slate-200 max-w-full lg:max-w-[1320px]">
+        <p className="text-base sm:text-lg lg:text-xl leading-7 sm:leading-9 lg:leading-9 mb-4 sm:mb-6 tracking-wide font-light text-slate-300 max-w-full lg:max-w-[1320px]">
           Thriving in collaborative environments, I eagerly embrace the latest technological advancements, always seeking opportunities to learn and innovate. My ultimate vision is to leave a lasting impact on the tech industry through relentless curiosity and creative problem-solving.
         </p>
-        <p className="text-base sm:text-lg lg:text-xl leading-7 sm:leading-9 lg:leading-9 mb-10 sm:mb-16 tracking-wide font-light text-slate-200 max-w-full lg:max-w-[1320px]">
+        <p className="text-base sm:text-lg lg:text-xl leading-7 sm:leading-9 lg:leading-9 mb-10 sm:mb-16 tracking-wide font-light text-slate-300 max-w-full lg:max-w-[1320px]">
           With a commitment to continuous growth and a keen eye for emerging trends, I aspire to contribute meaningfully to shaping the future of technology. By staying at the forefront of technological advancements and continuously honing my skills, I aim to be a catalyst for innovation and positive change in the tech industry.
         </p>
         </div>
@@ -42,7 +42,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side Content */}
           <div data-aos="fade-right">
-            <div className="text-base sm:text-lg lg:text-xl text-slate-200">
+            <div className="text-base sm:text-lg lg:text-xl text-slate-300">
               <ul className="space-y-4 sm:space-y-8">
                 <li className="flex items-center align-middle">
                   <IoPersonAddSharp

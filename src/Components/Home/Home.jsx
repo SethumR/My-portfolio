@@ -32,7 +32,7 @@ function Home() {
       </h1>
 
       {/* Subheading */}
-      <p className="text-lg sm:text-base md:text-lg lg:text-[27px] text-white text-opacity-70 mb-8 md:mb-8 lg:mb-12 sm:mb-4">
+      <p className="text-lg sm:text-base md:text-lg lg:text-[25px] text-white text-opacity-70 mb-8 md:mb-8 lg:mb-12 sm:mb-4">
         Undergraduate | Fullstack Developer | Blogger
       </p>
 
