@@ -8,6 +8,7 @@ import { RiTailwindCssFill, RiFlutterFill, RiFirebaseFill } from "react-icons/ri
 import { SiSpring, SiMongodb, SiAdobephotoshop, SiWondersharefilmora, SiAdobexd } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { FiFigma } from "react-icons/fi";
+import { section } from 'framer-motion/client';
 
 const SkillCategory = ({ title, skills }) => (
   <div className="mb-8 md:mb-0 ">
@@ -73,7 +74,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16">
+    <section id='skills' className="py-12 md:py-16 px-4 md:px-8 lg:px-16">
       <style jsx>{`
         @keyframes smoothShake {
           0%, 100% { transform: translateX(0); }
@@ -81,9 +82,9 @@ const Skills = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-6">
+      <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-10">
         <div className="w-20 h-1.5 bg-gradient-to-r from-teal-500 to-purple-600 mb-6 md:mb-10 rounded-full"></div>
-        <h2 className="text-4xl md:text-5xl lg:text-[54px] font-semibold mb-6 md:mb-10 tracking-wide">Skills</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-[50px] font-semibold mb-6 md:mb-10 tracking-wide">Skills</h2>
         <div data-aos="fade"> 
           <p className="mb-12 md:mb-12 text-xl md:text-2xl font-medium text-gray-300 ">
             As a developer, I've worked with a variety of Languages and Frameworks.
