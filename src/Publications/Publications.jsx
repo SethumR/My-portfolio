@@ -11,24 +11,24 @@ const articles = [
   },
   {
     id: 2,
+    title: "ChatGPT vs DeepSeek: A Comparison of Two AI Powerhouses",
+    image: "https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2025/01/28124329/Untitled-design-2025-01-28T124317.032.png",
+    link: "https://medium.com/@sethumgelaka6/chatgpt-vs-deepseek-a-comparison-of-two-ai-powerhouses-e050ff48c801",
+    date: "Feb 01 2025"
+  },
+  {
+    id: 3,
     title: "How to Create a Self-Care Routine That Works for You",
     image: "SA.png",
     link: "https://medium.com/@sethumgelaka6/how-to-create-a-self-care-routine-that-works-for-you-2030cbf7aceb",
     date: "Dec 25 2024"
   },
   {
-    id: 3,
-    title: "Embarking on the AI Odyssey: A Step-by-Step Guide to Creating Your Own GPT Model",
-    image: "react.png",
-    link: "https://medium.com/article3",
-    date: "Mon Dec 11 2023"
-  },
-  {
     id: 4,
-    title: "Exploring Top Drag and Drop Libraries for React JS",
-    image: "SA.png",
-    link: "https://medium.com/article4",
-    date: "Wed Jul 12 2023"
+    title: "What is the Deferece between Bosstrap and Tailwind CSS",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*T0x4TApsR_LlsRQBGAbbZA.jpeg",
+    link: "https://medium.com/@sethumgelaka6/tailwind-css-vs-bootstrap-b486fc00b4c1",
+    date: "Feb 01 2025"
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const Publications = () => {
           Medium Publications
         </h1>
         <div data-aos="fade">
-        <p className="text-gray-300 text-[18.5px] sm:text-2xl mb-10 sm:mb-12">
+        <p className="text-gray-300 text-[18.5px] sm:text-[22px] mb-10 sm:mb-12">
           Here I write blogs on technology, innovation, and various topics that pique my curiosity.
         </p>
         </div>
@@ -147,7 +147,7 @@ const Publications = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-3 sm:p-4 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-2.5 sm:p-2.5 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={24} />
