@@ -6,37 +6,38 @@ const articles = [
     id: 1,
     title: "Why React.js is a Game-Changer for Modern Web Development",
     image: "react.png",
-    link: "https://medium.com/@sethumgelaka6/react-js-is-more-than-just-a-javascript-library-its-a-powerful-tool-that-has-revolutionized-the-c73cbdd50f06?source=friends_link&sk=08597ff6f65e468617db39b3c61d4f0c",
+    link: "https://medium.com/@SethumRuberu/react-js-is-more-than-just-a-javascript-library-its-a-powerful-tool-that-has-revolutionized-the-c73cbdd50f06",
     date: "Dec 24 2024"
   },
   {
     id: 2,
     title: "ChatGPT vs DeepSeek: A Comparison of Two AI Powerhouses",
     image: "https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2025/01/28124329/Untitled-design-2025-01-28T124317.032.png",
-    link: "https://medium.com/@sethumgelaka6/chatgpt-vs-deepseek-a-comparison-of-two-ai-powerhouses-e050ff48c801",
+    link: "https://medium.com/@SethumRuberu/chatgpt-vs-deepseek-a-comparison-of-two-ai-powerhouses-e050ff48c801",
     date: "Feb 01 2025"
   },
   {
     id: 3,
-    title: "How to Create a Self-Care Routine That Works for You",
-    image: "SA.png",
-    link: "https://medium.com/@sethumgelaka6/how-to-create-a-self-care-routine-that-works-for-you-2030cbf7aceb",
-    date: "Dec 25 2024"
+    title: "The Rise of Generative AI: Transforming Creativity and Innovation",
+    image: "https://medium.com/@SethumRuberu/the-rise-of-generative-ai-transforming-creativity-and-innovation-32b29c0a463f",
+    link: "https://medium.com/article5",
+    date: "Feb 02 2025"
   },
   {
     id: 4,
-    title: "What is the Deferece between Bosstrap and Tailwind CSS",
-    image: "https://miro.medium.com/v2/resize:fit:1200/1*T0x4TApsR_LlsRQBGAbbZA.jpeg",
-    link: "https://medium.com/@sethumgelaka6/tailwind-css-vs-bootstrap-b486fc00b4c1",
-    date: "Feb 01 2025"
+    title: "How to Create a Self-Care Routine That Works for You",
+    image: "SA.png",
+    link: "https://medium.com/@SethumRuberu/how-to-create-a-self-care-routine-that-works-for-you-2030cbf7aceb",
+    date: "Dec 25 2024"
   },
   {
     id: 5,
-    title: "An Introduction to Prisma ORM: Simplifying Database Operations with Type-Safe Queries",
-    image: "SA.png",
-    link: "https://medium.com/article5",
-    date: "Mon Jul 03 2023"
-  }
+    title: "What is the Deferece between Bosstrap and Tailwind CSS",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*T0x4TApsR_LlsRQBGAbbZA.jpeg",
+    link: "https://medium.com/@SethumRuberu/tailwind-css-vs-bootstrap-b486fc00b4c1",
+    date: "Feb 01 2025"
+  },
+  
 ];
 
 const Publications = () => {
@@ -67,7 +68,7 @@ const Publications = () => {
   }, []);
 
   return (
-    <section className="pl-4 sm:pl-8 lg:pl-20 px-4 sm:px-6 py-12 lg:py-16 min-h-screen relative sm:mb-24 -mb-12">
+    <section id='publications' className="pl-4 sm:pl-8 lg:pl-20 px-4 sm:px-6 py-12 lg:py-16 min-h-screen relative sm:mb-24 -mb-12">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-[34px] sm:text-5xl font-bold text-white mb-6 sm:mb-6 tracking-wide">
           Medium Publications
@@ -135,7 +136,7 @@ const Publications = () => {
 
         <a
           data-aos="fade-up"
-          href="https://medium.com/@sethumgelaka6"
+          href="https://medium.com/@SethumRuberu"
           className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold"
           target="_blank"
           rel="noopener noreferrer"
@@ -147,10 +148,10 @@ const Publications = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-2.5 sm:p-2.5 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
+          className="fixed bottom-6 right-6 bg-gradient-to-l from-teal-500 to-purple-600 p-2 sm:p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
           aria-label="Scroll to top"
         >
-          <FaArrowUp size={24} />
+          <FaArrowUp size={20} />
         </button>
       )}
     </section>
