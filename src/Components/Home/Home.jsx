@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <header
-      className="pt-56 sm:pt-32 md:pt-36 lg:pt-60 px-6 sm:px-4 md:px-10 lg:px-20 bg-[#0E1526] text-white"
+      className="pt-56 sm:pt-32 md:pt-36 lg:pt-64 px-6 sm:px-4 md:px-10 lg:px-20  text-white"
       style={{ letterSpacing: "2.1px" }}
     >
       {/* Gradient Line */}

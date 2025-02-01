@@ -40,7 +40,7 @@ const Journey = () => {
       </p>
 
 
-      <div data-aos="fade-up">
+      <div data-aos="fade">
       <div 
         ref={scrollRef}
         className="flex overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory sm:snap-none sm:flex-wrap justify-start sm:justify-between gap-4 sm:gap-4 pb-4 sm:pb-0"

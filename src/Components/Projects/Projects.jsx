@@ -41,10 +41,9 @@ function Projects() {
 
   return (
     <div className="container mx-auto px-4 py-16 mb-4 sm:mb-12 mt-12 lg:mt-20">
-      <h2 className="text-[42px] sm:text-5xl lg:text-6xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
-      <p className="mb-10 sm:mb-16 text-xl sm:text-2xl font-medium text-gray-300 text-center max-w-3xl mx-auto">
-        As a developer, these are some of the projects I've worked on recently.
-      </p>
+      <h2 className="text-[42px] sm:text-5xl lg:text-5xl font-semibold mb-6 sm:mb-10 tracking-wide text-center">Projects</h2>
+      <p className="mb-10 sm:mb-16 text-xl sm:text-2xl font-medium text-gray-300 text-center max-w-6xl mx-auto">
+      As a developer, here are some of the impactful projects I've been working on recently  </p>
 
       <div data-aos="fade-up">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-10">

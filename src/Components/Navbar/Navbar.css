@@ -1,7 +1,7 @@
 /* General styles */
 body {
     margin: 0;
-    background-color: #0E1526;
+    background-color: #070b19;
     color: #ffffff;
     font-family: "DM Sans", sans-serif;
 }
@@ -14,7 +14,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #0E1526;
+    background-color: #070b19;
     letter-spacing: 2.1px;
     font-weight: 500;
     z-index: 1000;
@@ -85,7 +85,7 @@ body {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #0E1526;
+        background-color: #070b19;
         padding: 20px 0;
         display: none; /* Initially hidden */
         gap: 20px;
