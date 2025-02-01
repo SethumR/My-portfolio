@@ -1,4 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
@@ -12,6 +14,38 @@ import Publications from './Publications/Publications';
 
 function App() {
   const canvasRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if the screen size is mobile or not
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust based on your mobile breakpoint
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize); // Listen for resize events
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,  // Duration of the animation
+      once: false,     // Set to false to allow re-triggering
+      mirror: true,    // Allow animations to trigger on scroll up as well
+    });
+
+    // Reinitialize AOS on scroll
+    const handleScroll = () => {
+      AOS.refresh(); // Refresh AOS animations on scroll
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -35,7 +69,10 @@ function App() {
 
     const drawLines = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+
+      // Set the stroke style based on screen size
+      const strokeColor = isMobile ? 'rgba(255, 255, 255, 0.06)' : 'rgba(255, 255, 255, 0.1)';
+      ctx.strokeStyle = strokeColor;
       ctx.lineWidth = 1;
 
       lines.forEach((line) => {
@@ -59,7 +96,7 @@ function App() {
       window.removeEventListener('resize', resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [isMobile]); // Re-run the effect when screen size changes
 
   return (
     <>
