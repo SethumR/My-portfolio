@@ -26,7 +26,7 @@ function Home() {
   return (
     <section id="home">
       {/* Hero Section */}
-      <div className="container mx-auto px-6 pt-48 lg:pt-60 lg:pb-48 ">
+      <div className="container mx-auto px-6 pt-40 lg:pt-60 lg:pb-48 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="space-y-8">
