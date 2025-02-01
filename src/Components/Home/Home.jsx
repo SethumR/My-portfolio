@@ -65,7 +65,7 @@ function Home() {
             </div>
 
 
-            <div data-aos="fade">
+            <div>
               <div className="flex space-x-6 mt-6 ml-3 mb-28 sm:-mb-28">
                 <a href="https://github.com/SethumR" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
