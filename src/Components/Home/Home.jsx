@@ -26,7 +26,7 @@ function Home() {
   return (
     <section id="home">
       {/* Hero Section */}
-      <div className="container mx-auto px-6 pt-48 lg:pt-60 lg:pb-48 ">
+      <div className="container mx-auto px-6 pt-[200px] lg:pt-60 lg:pb-48 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="space-y-8">
@@ -58,7 +58,7 @@ function Home() {
               <a 
                 href="CV.pdf" 
                 target="_blank"  // Opens the CV in a new tab
-                className="bg-gradient-to-l from-teal-500 to-purple-600 hover:bg-gradient-to-r hover:from-teal-500 hover:to-purple-600 text-white px-4 py-3 sm:px-5 sm:py-3 text-base sm:text-lg font-semibold rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg inline-flex items-center mb-2"
+                className="bg-gradient-to-l from-teal-500 to-purple-600 hover:bg-gradient-to-r hover:from-teal-500 hover:to-purple-600 text-white px-4 py-3 sm:px-5 sm:py-3 text-base sm:text-lg font-semibold rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg inline-flex items-center mb-0.5 sm:mb-2"
               >
                 Grab My Resume <FaCloudDownloadAlt className="ml-2 inline-block text-xl sm:text-2xl" />
               </a>
@@ -66,18 +66,18 @@ function Home() {
 
 
             <div>
-              <div className="flex space-x-6 mt-6 ml- sm:ml-3 mb-28 sm:-mb-28 ">
+              <div className="flex space-x-6 mt-6 ml-1 sm:ml-3 mb-28 sm:-mb-28 ">
                 <a href="https://github.com/SethumR" target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="text-slate-300 text-3xl sm:text-3xl hover:scale-110 transition-transform" />
+                  <FaGithub className="text-slate-300 text-[28px] sm:text-3xl hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://www.linkedin.com/in/sethum-ruberu-90a369293/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
+                  <FaLinkedin className="text-slate-300 text-[28px] hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://www.instagram.com/sethumm.r/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
+                  <FaInstagram className="text-slate-300 text-[28px] hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://buymeacoffee.com/sethumruberu" target="_blank" rel="noopener noreferrer">
-                  <SiBuymeacoffee className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
+                  <SiBuymeacoffee className="text-slate-300 text-[28px] hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
