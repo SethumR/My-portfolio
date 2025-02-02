@@ -135,7 +135,7 @@ const Publications = () => {
         </div>
 
         <a
-          data-aos="fade-up"
+          data-aos="fade"
           href="https://medium.com/@SethumRuberu"
           className="block w-full bg-gradient-to-l from-teal-500 to-purple-600 hover:from-teal-400 hover:to-purple-700 shadow-md text-white text-center py-3 sm:py-4 rounded-lg mt-6 sm:mt-8  transition-colors font-semibold"
           target="_blank"

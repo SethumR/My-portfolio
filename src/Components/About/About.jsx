@@ -43,7 +43,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Side Content */}
-            <div data-aos="fade-right">
+            <div data-aos="fade">
               <div className="text-base sm:text-lg lg:text-[19px] text-slate-300">
                 <ul className="space-y-4 sm:space-y-8">
                   <li className="flex items-center align-middle">
@@ -93,7 +93,7 @@ const About = () => {
             </div>
 
             {/* Right Side Image */}
-            <div data-aos="fade-left">
+            <div data-aos="fade">
             <div className="relative flex justify-center md:justify-end mb-4 md:mb-0 lg:pr-16 sm:pr-12 pr-12 lg:pt-1 pt-6">
               <div className="rounded-3xl overflow-hidden border-4 border-gray-700 shadow-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm ">
                 <img
