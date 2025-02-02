@@ -66,18 +66,18 @@ function Home() {
 
 
             <div>
-              <div className="flex space-x-6 mt-6 ml-3 sm:ml-3 mb-28 sm:-mb-28 ">
+              <div className="flex space-x-6 mt-6 ml- sm:ml-3 mb-28 sm:-mb-28 ">
                 <a href="https://github.com/SethumR" target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="text-slate-300 text-2xl sm:text-3xl hover:scale-110 transition-transform" />
+                  <FaGithub className="text-slate-300 text-3xl sm:text-3xl hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://www.linkedin.com/in/sethum-ruberu-90a369293/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="text-slate-300 text-2xl hover:scale-110 transition-transform" />
+                  <FaLinkedin className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://www.instagram.com/sethumm.r/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="text-slate-300 text-2xl hover:scale-110 transition-transform" />
+                  <FaInstagram className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
                 </a>
                 <a href="https://buymeacoffee.com/sethumruberu" target="_blank" rel="noopener noreferrer">
-                  <SiBuymeacoffee className="text-slate-300 text-2xl hover:scale-110 transition-transform" />
+                  <SiBuymeacoffee className="text-slate-300 text-3xl hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
