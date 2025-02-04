@@ -4,10 +4,10 @@ import { FaChevronLeft, FaChevronRight, FaArrowUp } from 'react-icons/fa';
 const articles = [
   {
     id: 1,
-    title: "Why React.js is a Game-Changer for Modern Web Development",
-    image: "react.png",
-    link: "https://medium.com/@SethumRuberu/react-js-is-more-than-just-a-javascript-library-its-a-powerful-tool-that-has-revolutionized-the-c73cbdd50f06",
-    date: "Dec 24 2024"
+    title: "The Rise of Generative AI: Transforming Creativity and Innovation",
+    image: "https://media.licdn.com/dms/image/v2/D5612AQGGNDkXxzP-5Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1715597171341?e=2147483647&v=beta&t=oXAMoUXHCo9T_4FgkBL2_o5oKkuq57Q9wpYlE587woU",
+    link: "https://medium.com/@SethumRuberu/the-rise-of-generative-ai-transforming-creativity-and-innovation-32b29c0a463f",
+    date: "Feb 02 2025"
   },
   {
     id: 2,
@@ -18,10 +18,10 @@ const articles = [
   },
   {
     id: 3,
-    title: "The Rise of Generative AI: Transforming Creativity and Innovation",
-    image: "https://medium.com/@SethumRuberu/the-rise-of-generative-ai-transforming-creativity-and-innovation-32b29c0a463f",
-    link: "https://medium.com/article5",
-    date: "Feb 02 2025"
+    title: "Why React.js is a Game-Changer for Modern Web Development",
+    image: "react.png",
+    link: "https://medium.com/@SethumRuberu/react-js-is-more-than-just-a-javascript-library-its-a-powerful-tool-that-has-revolutionized-the-c73cbdd50f06",
+    date: "Dec 24 2024"
   },
   {
     id: 4,
