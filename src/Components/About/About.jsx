@@ -24,7 +24,7 @@ const About = () => {
           }
         `}</style>
         
-        <div className='sm:pl-4 md:pl-10 lg:pl-16 mb-4'>
+        <div className='sm:pl-4 md:pl-10 lg:pl-10 pl-2 mb-4 mx-auto container'>
           <div className="w-16 sm:w-20 min-h-[5.5px] bg-gradient-to-r from-teal-500 to-purple-600 mb-6 sm:mb-10 rounded-full"></div>
           <h1 className="text-4xl sm:text-5xl lg:text-[50px] font-semibold mb-6 sm:mb-10 tracking-wide">About</h1>
           <div data-aos="fade">

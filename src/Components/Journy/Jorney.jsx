@@ -34,7 +34,7 @@ const Journey = () => {
   return (
     <div 
     data-aos="fade"
-    className="text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:pl-28 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+    className="text-white p-4 sm:p-6 md:p-8 lg:p-10  mb-6 sm:mb-8 md:mb-10 lg:mb-12 mx-auto container">
       <p className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
         My journey has taught me numerous valuable lessons about growth and resilience.
       </p>
