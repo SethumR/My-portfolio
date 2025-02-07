@@ -1,5 +1,5 @@
 const ServiceCard = ({ image, title, type }) => (
-  <div className="bg-slate-800 rounded-3xl overflow-hidden shadow-md	transform transition-transform hover:scale-105 duration-700 ease-out-in shadow-slate-600">
+  <div className="bg-slate-800 rounded-3xl overflow-hidden shadow-md	transform transition-transform hover:scale-105 duration-700 ease-out-in shadow-slate-600 ">
     <div className="h-72 flex items-center justify-center p-4"> 
       <img src={image} alt={title} className="w-full h-full object-cover rounded-3xl" />
     </div>
@@ -31,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="text-white py-12 px-6">
+    <section id="services" className="text-white py-12 px-6 ">
       <div className="max-w-[1200px] mx-auto">
         <h2 className="text-[42px] sm:text-5xl font-semibold mb-12 lg:mb-16 text-center">
           Our Services
