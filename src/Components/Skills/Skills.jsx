@@ -82,7 +82,7 @@ const Skills = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto sm:pl-6 md:pl-10 lg:pl-10">
+      <div className="mx-auto container sm:pl-6 md:pl-10 lg:pl-10 ">
         <div className="w-20 h-1.5 bg-gradient-to-r from-teal-500 to-purple-600 mb-6 md:mb-10 rounded-full"></div>
         <h2 className="text-4xl md:text-5xl lg:text-[50px] font-semibold mb-6 md:mb-10 tracking-wide">Skills</h2>
         <div data-aos="fade"> 
