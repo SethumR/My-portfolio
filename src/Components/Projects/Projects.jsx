@@ -5,8 +5,14 @@ import 'aos/dist/aos.css';
 
 const ProjectBox = ({ image, title, description, link }) => (
   <div className="portfolio-box relative group h-[350px] sm:h-[375px] w-full sm:w-[375px] rounded-3xl overflow-hidden">
-    <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"/>
-    <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-4 sm:p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-600">
+    {/* Image */}
+    <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+    
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-500 ease-in-out group-hover:bg-opacity-20 z-10"></div>
+    
+    {/* Content */}
+    <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-4 sm:p-16 translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-y-0 bg-gradient-to-b from-transparent to-cyan-700 z-20">
       <h4 className="text-2xl sm:text-3xl font-semibold mb-2">{title}</h4>
       <p className="text-sm sm:text-base my-1 mb-4 sm:mb-6">{description}</p>
       <a href={link} target="_blank" rel="noopener noreferrer" className="block">
@@ -18,26 +24,46 @@ const ProjectBox = ({ image, title, description, link }) => (
   </div>
 );
 
+
 function Projects() {
   const projects = [
     {
-      image: "https://manulaperera12.github.io/portfolio/images/img2.png",
-      title: "My Portfolio",
-      description: "Explore my personal portfolio, featuring projects powered by React.js and styled with Tailwind CSS",
-      link: "https://github.com/SethumR/My-portfolio.git"
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQEucjxizYhafw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1715682597484?e=2147483647&v=beta&t=xz91icT2nqGV2321UE6kwTTtcFkuwF3BtH8o2U9xGzE",
+      title: "Mock Interview Platform",
+      description: "AI platform simulating interviews with real-time feedback, analytics, and communication skill assessments for users.",
+      link: "https://hired.solutions/"
     },
     {
-      image: "https://manulaperera12.github.io/portfolio/images/img1.png",
-      title: "Real Time Ticket Simulation",
-      description: "A real-time ticket simulation system built using Java, multithreading, synchronization and serialization",
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQFqZzKHGn16Lw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682949649829?e=2147483647&v=beta&t=0Bz15Ubk7BNohyvslzkE8WjE5qTcgTYgUKTKxk-djLo",
+      title: "ML Model for Breast Cancer Patients",
+      description: "Machine learning models predicting breast cancer with classifier comparison, hyperparameter tuning, and visual insights.",
+      link: "https://github.com/SethumR/Breast-Cancer-Prediction.git"
+    },
+    {
+      image: "https://strapi.aurumproptech.in/uploads/Future_of_real_estate_market_933684ecef.webp",
+      title: "KeyNest Estate Agent Application",
+      description: "A property app with filters, drag-and-drop favorites, and responsive design for seamless property browsing.",
+      link: "https://luxuryestates.netlify.app/"
+    },
+    {
+      image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/0*MAmdFRYx-2XLuZ8O",
+      title: "Real-Time Ticket Simulation",
+      description: "Simulates real-time ticket booking with dynamic seat handling, vendor logs, and customer purchase automation.",
       link: "https://github.com/SethumR/Ticketing-System-CLI.git"
     },
     {
-      image: "https://manulaperera12.github.io/portfolio/images/img3.png",
-      title: "Mock interview Platform",
-      description: "About Responsive Web Application for an AI based Mock interview platform Web Application using React.",
-      link: "https://github.com/SethumR/HIRED.git"
+      image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*xH-xZAZ_ireZp_64",
+      title: "Bookstore Backend API",
+      description: "Java-based REST API managing books, customers, and orders with scalable architecture and JSON responses.",
+      link: "https://github.com/SethumR/BooksStore.git"
     },
+    {
+      image: "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/2d20b705-9dac-4f1d-9a01-54ea7557aa4f/6c413449-da83-4063-a7b8-b7bfbb902612.png",
+      title: "My Portfolio",
+      description: "A responsive portfolio built using React and Tailwind CSS, showcasing my projects, skills, and experience.",
+      link: "https://github.com/SethumR/My-portfolio.git"
+    }
+    
   ];
 
   useEffect(() => {
