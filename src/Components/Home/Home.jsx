@@ -30,7 +30,7 @@ function Home() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
           <div className="space-y-8">
-            <h1 className="text-4xl lg:text-[55px] font-bold leading-tight text-white tracking-wide ">
+            <h1 className="text-4xl lg:text-[50px] font-bold leading-tight text-white tracking-wide ">
               Sethum Ruberu{" "}
               <span className="block">
                 <TypeAnimation
@@ -45,7 +45,7 @@ function Home() {
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
-                  className="bg-gradient-to-l from-teal-500 to-purple-600 bg-clip-text text-transparent text-3xl lg:text-[55px] "
+                  className="bg-gradient-to-l from-teal-500 to-purple-600 bg-clip-text text-transparent text-3xl lg:text-[50px] "
                 />
               </span>
             </h1>
@@ -56,7 +56,7 @@ function Home() {
             </div>
             <div data-aos="fade-right">
               <a 
-                href="CV.pdf" 
+                href="SethumRuberu_CV.pdf" 
                 target="_blank"  // Opens the CV in a new tab
                 className="bg-gradient-to-l from-teal-500 to-purple-600 hover:bg-gradient-to-r hover:from-teal-500 hover:to-purple-600 text-white px-4 py-3 sm:px-5 sm:py-3 text-base sm:text-lg font-semibold rounded-2xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg inline-flex items-center mb-0.5 sm:mb-2"
               >
