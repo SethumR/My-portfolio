@@ -28,7 +28,7 @@ const Journey = () => {
     { year: '2022', description: 'Joined with IIT and started following foundation program' },
     { year: '2023', description: 'Successfully finished the foundation and started 1st year at UOW' },
     { year: '2024', description: 'Successfully finished the 1st year at UOW and started 2nd year' },
-    { year: '2025', description: 'Succsfully Completed 1 semester of the 2nd year and stared 2nd Semester' },
+    { year: '2025', description: 'Succsfully Completed 2nd yaer at UOW' },
   ];
 
   return (
